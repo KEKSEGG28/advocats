@@ -200,7 +200,7 @@ a {
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 120%; 
+    line-height: 120%;
     margin: 24px auto 0;
   }
   &__titlebtn {
@@ -216,7 +216,7 @@ a {
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
-    line-height: 120%; 
+    line-height: 120%;
   }
   &__post {
     color: #222;
@@ -225,7 +225,7 @@ a {
     font-size: 14px;
     font-style: normal;
     font-weight: 300;
-    line-height: 120%; 
+    line-height: 120%;
     text-transform: lowercase;
   }
   &__text {
@@ -241,7 +241,7 @@ a {
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
-    line-height: 120%; 
+    line-height: 120%;
   }
 
   &__subtitletop {
@@ -251,7 +251,7 @@ a {
     font-size: 14px;
     font-style: normal;
     font-weight: 300;
-    line-height: 120%; 
+    line-height: 120%;
   }
 
   &__subtitle {
@@ -261,7 +261,7 @@ a {
     font-size: 14px;
     font-style: normal;
     font-weight: 300;
-    line-height: 120%; 
+    line-height: 120%;
   }
   &__subtitlebottom {
     color: #222;
@@ -270,6 +270,35 @@ a {
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
-    line-height: 120%; 
+    line-height: 120%;
+  }
+}
+.review {
+  &__title {
+    color: #222;
+    font-family: Nunito Sans;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 150%; /* 42px */
+    text-transform: uppercase;
+  }
+}
+.info {
+  &__subtitle {
+    color: #222;
+    font-family: Nunito Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 120%; /* 16.8px */
+  }
+  &__title {
+    color: #222;
+    font-family: Nunito Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 30px */
   }
 }

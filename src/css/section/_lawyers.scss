@@ -10,7 +10,7 @@
   }
   &__card {
     max-width: 312px;
-    // max-height: 414px;
+    height: 414px;
     display: flex;
     padding-bottom: 0px;
     flex-direction: column;
@@ -21,7 +21,7 @@
   &__cardop {
     position: absolute;
     max-width: 312px;
-    // max-height: 414px;
+    height: 414px;
     display: flex;
     padding-bottom: 0px;
     flex-direction: column;
@@ -31,6 +31,7 @@
     opacity: 0;
     &:hover {
       opacity: 1;
+      cursor: url("../icons/cursorwhite.svg"), auto;
     }
   }
 }
@@ -46,5 +47,41 @@
   }
   &__subtitlebottom {
     padding: 40px 0 84px 0;
+  }
+  &__rt {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 20px;
+    right: 20px;
+    border-top: 1px #4f8ff0 solid;
+    border-right: 1px #4f8ff0 solid;
+  }
+  &__lt {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 20px;
+    left: 20px;
+    border-top: 1px #4f8ff0 solid;
+    border-left: 1px #4f8ff0 solid;
+  }
+  &__rb {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: 20px;
+    bottom: 20px;
+    border-right: 1px #4f8ff0 solid;
+    border-bottom: 1px #4f8ff0 solid;
+  }
+  &__lb {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 20px;
+    bottom: 20px;
+    border-left: 1px #4f8ff0 solid;
+    border-bottom: 1px #4f8ff0 solid;
   }
 }
