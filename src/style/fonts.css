@@ -1,0 +1,56 @@
+.top__info {
+  background: #010101;
+  height: 52px;
+  flex-shrink: 0;
+}
+
+.top__navigators {
+  background: rgba(1, 1, 1, 0.76);
+  height: 112px;
+  flex-shrink: 0;
+}
+.top__nm {
+  color: #fff;
+  font-family: Nunito Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+}
+.top__zvonok {
+  color: #4f8ff0;
+  font-family: Nunito Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+.top__titleh1 {
+  color: #4f8ff0;
+  font-family: Nunito Sans;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 110%;
+  text-transform: uppercase;
+}
+
+.top__undertitle {
+  color: #fff;
+  font-family: Nunito Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 110%;
+  text-transform: lowercase;
+}
+a {
+  color: #fff;
+  text-align: center;
+  font-family: Nunito Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  text-decoration: none;
+}

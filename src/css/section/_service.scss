@@ -1,0 +1,109 @@
+.service {
+  background: #f7f7f7;
+  padding: 80px 0;
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1320px;
+    height: 538px;
+    margin-top: 48px;
+  }
+
+  &__text {
+    width: 920px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  &__title {
+    display: block;
+    color: #222;
+    font-family: Nunito Sans;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 150%;
+    text-transform: uppercase;
+  }
+  &__subtitle {
+    color: #222;
+    font-family: Nunito Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    padding-top: 24px;
+  }
+  &__titlebtn {
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+
+  &__card {
+    display: flex;
+    position: relative;
+    max-width: 424px;
+    height: 250px;
+    padding: 50px 32px;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    flex-shrink: 0;
+    background: #fff;
+    transition: 0.5s;
+
+    &:hover {
+      display: flex;
+      width: 424px;
+      height: 250px;
+      padding: 50px 32px;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+      flex-shrink: 0;
+      background: #4f8ff0;
+      cursor: url("../icons/cursor.svg"), auto;
+
+      .service {
+        &__cardtitle {
+          color: white;
+        }
+        &__cardsubtitle {
+          color: white;
+        }
+      }
+    }
+
+    &:hover path {
+      fill: white;
+    }
+  }
+
+  &__cardtext {
+  }
+
+  &__topleft {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+  &__topright {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    transform: rotate(90deg);
+  }
+  &__bottomleft {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    transform: rotate(-90deg);
+  }
+  &__bottomright {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    transform: rotate(180deg);
+  }
+}

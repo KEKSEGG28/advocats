@@ -1,0 +1,28 @@
+.about {
+  &__container {
+    padding: 80px 0;
+  }
+  &__img {
+    width: 535px;
+    height: 359px;
+    flex-shrink: 0;
+    background: #fff;
+    box-shadow: 4px 4px 12px 2px rgba(33, 33, 33, 0.25);
+  }
+  &__content {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__subtitle {
+    max-width: 720px;
+    max-height: 424px;
+  }
+  &__hbtn {
+    display: inline;
+  }
+  &__sertbtn {
+    display: inline;
+  }
+}
+
+

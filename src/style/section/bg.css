@@ -1,0 +1,8 @@
+.upmenu__bg {
+  border: 1px solid black;
+  height: 870px;
+  background-image: url("../../image/bg.jpg");
+  background-position: 100%;
+  background-size: auto;
+  background-repeat: no-repeat;
+}
