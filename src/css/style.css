@@ -305,7 +305,7 @@ a:hover {
   font-size: 14px;
   font-style: normal;
   font-weight: 300;
-  line-height: 120%; /* 16.8px */
+  line-height: 120%;
 }
 .info__title {
   color: #222;
@@ -313,7 +313,159 @@ a:hover {
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
-  line-height: 150%; /* 30px */
+  line-height: 150%;
+}
+
+.material__title {
+  color: #222;
+  font-family: Nunito Sans;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 150%;
+  text-transform: uppercase;
+}
+.material__subtitle {
+  color: #222;
+  text-align: center;
+  font-family: Nunito Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+.material__cardtitle {
+  color: #222;
+  font-family: Nunito Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+.material__cardsubtitle {
+  color: #222;
+  font-family: Nunito Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 16.8px */
+}
+.material__time {
+  color: #222;
+  font-family: Nunito Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 120%;
+}
+
+.footer {
+  background: #222;
+}
+.footer__bottom {
+  background: #181818;
+  height: 49px;
+}
+.footer__title {
+  max-width: 276px;
+  color: #4f8ff0;
+  font-family: Nunito Sans;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 150%;
+  text-transform: uppercase;
+}
+.footer__span {
+  color: #fff;
+  font-family: Nunito Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 150%;
+  text-transform: lowercase;
+}
+.footer__subtitle {
+  max-width: 862px;
+  color: #f8f5f4;
+  font-family: Nunito Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 19.2px */
+  text-transform: lowercase;
+}
+.footer__nav {
+  color: #fff;
+  text-align: center;
+  font-family: Nunito Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  text-transform: uppercase;
+}
+.footer__nav:hover {
+  color: #4f8ff0;
+  text-align: center;
+  font-family: Nunito Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  text-transform: uppercase;
+}
+
+.contact__titleone {
+  color: #8c8c8c;
+  font-family: Nunito Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  text-transform: uppercase;
+}
+.contact__titletwo {
+  color: #fff;
+  font-family: Nunito Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+.person__title {
+  color: #fff;
+  font-family: Nunito Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+.person__subtitle {
+  color: #fff;
+  font-family: Nunito Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 120%;
+}
+.person__text {
+  color: #fff;
+  font-family: Nunito Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 21px */
+}
+
+.bottom__title {
+  color: #fff;
+  font-family: Nunito Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 16.8px */
 }
 
 header {
@@ -616,6 +768,8 @@ header {
 }
 .review__cards {
   padding-top: 48px;
+  display: flex;
+  justify-content: space-between;
 }
 .review__card {
   max-width: 648px;
@@ -630,6 +784,7 @@ header {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  align-items: center;
 }
 .review__icon {
   width: 55px;
@@ -637,4 +792,171 @@ header {
 }
 .review__subtitle {
   padding-top: 16px;
+}
+.review__info {
+  width: 100%;
+  padding: 0 24px;
+}
+
+.material {
+  width: 100%;
+  padding: 80px 0;
+}
+.material__cards {
+  display: flex;
+  justify-content: space-between;
+}
+.material__white {
+  border-color: #fff;
+}
+.material__img:hover + h3 {
+  color: red;
+}
+.material__cardopacity {
+  position: absolute;
+  width: 424px;
+  height: 270px;
+  flex-shrink: 0;
+  background: rgba(79, 143, 240, 0.4);
+  opacity: 0;
+}
+.material__cardopacity:hover {
+  max-width: 424px;
+  height: 270px;
+  background: rgba(79, 143, 240, 0.4);
+  opacity: 1;
+  cursor: url("../icons/cursor.svg"), auto;
+}
+.material__svg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 41.165px;
+  height: 40px;
+  flex-shrink: 0;
+  background: #fff;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  position: absolute;
+  left: 50%;
+}
+.material__card {
+  position: relative;
+  margin-top: 48px;
+  max-width: 424px;
+  height: 481px;
+  flex-shrink: 0;
+}
+.material__line {
+  padding-top: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.material__lineline {
+  width: 314px;
+  height: 1px;
+  background: #f8f5f4;
+}
+.material__cardsubtitle {
+  padding: 16px 0 24px 0;
+}
+.material__cardtitle {
+  margin-top: 24.5px;
+}
+.material__title {
+  text-align: center;
+}
+.material__titlebtn {
+  margin-top: 10px;
+  display: block;
+  margin: 10px auto 0 auto;
+}
+.material__subtitle {
+  margin: 0 auto;
+  padding-top: 24px;
+  max-width: 920px;
+}
+
+.material__img:hover + .material__text h3 {
+  color: #4f8ff0;
+  font-family: Nunito Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 24px */
+}
+
+.flex__jcsb {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex__jcc_aic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  padding: 80px 0 0 0;
+}
+.footer__bottom {
+  margin-top: 80px;
+}
+.footer__top {
+  align-items: center;
+}
+.footer__line {
+  margin-top: 48px;
+  width: 1320px;
+  height: 1px;
+  opacity: 0.2;
+  background: #8c8c8c;
+}
+.footer__block {
+  padding-top: 48px;
+}
+
+.contact__nav {
+  max-width: 312px;
+  width: 100%;
+  height: 182px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+}
+.contact__icon {
+  width: 55px;
+  height: 55px;
+  flex-shrink: 0;
+  background: #2c2c2c;
+}
+.contact__title {
+  width: 100%;
+  padding-left: 24px;
+}
+.contact__tel, .contact__mail {
+  padding-top: 24px;
+}
+
+.person__subtext {
+  color: #fff;
+  font-family: Nunito Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  max-width: 424px;
+  width: 100%;
+  padding-top: 16px;
+}
+.person__text {
+  width: 100%;
+  padding-left: 24px;
+}
+
+.question__btn {
+  margin: 48px 0;
 }/*# sourceMappingURL=style.css.map */

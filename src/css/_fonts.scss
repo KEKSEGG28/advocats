@@ -291,7 +291,7 @@ a {
     font-size: 14px;
     font-style: normal;
     font-weight: 300;
-    line-height: 120%; /* 16.8px */
+    line-height: 120%;
   }
   &__title {
     color: #222;
@@ -299,6 +299,162 @@ a {
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
-    line-height: 150%; /* 30px */
+    line-height: 150%;
+  }
+}
+.material {
+  &__title {
+    color: #222;
+    font-family: Nunito Sans;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 150%;
+    text-transform: uppercase;
+  }
+  &__subtitle {
+    color: #222;
+    text-align: center;
+    font-family: Nunito Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+  }
+  &__cardtitle {
+    color: #222;
+    font-family: Nunito Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+  }
+  &__cardsubtitle {
+    color: #222;
+    font-family: Nunito Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 16.8px */
+  }
+  &__time {
+    color: #222;
+    font-family: Nunito Sans;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 120%;
+  }
+}
+.footer {
+  background: #222;
+  &__bottom {
+    background: #181818;
+    height: 49px;
+  }
+  &__title {
+    max-width: 276px;
+    color: #4f8ff0;
+    font-family: Nunito Sans;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 150%;
+    text-transform: uppercase;
+  }
+  &__span {
+    color: #fff;
+    font-family: Nunito Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 150%;
+    text-transform: lowercase;
+  }
+  &__subtitle {
+    max-width: 862px;
+    color: #f8f5f4;
+    font-family: Nunito Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 19.2px */
+    text-transform: lowercase;
+  }
+  &__nav {
+    color: #fff;
+    text-align: center;
+    font-family: Nunito Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    text-transform: uppercase;
+    &:hover {
+      color: #4f8ff0;
+      text-align: center;
+      font-family: Nunito Sans;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 120%;
+      text-transform: uppercase;
+    }
+  }
+}
+.contact {
+  &__titleone {
+    color: #8c8c8c;
+    font-family: Nunito Sans;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    text-transform: uppercase;
+  }
+  &__titletwo {
+    color: #fff;
+    font-family: Nunito Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+  }
+}
+.person {
+  &__title {
+    color: #fff;
+    font-family: Nunito Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+  }
+
+  &__subtitle {
+    color: #fff;
+    font-family: Nunito Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 120%;
+  }
+  &__text {
+    color: #fff;
+    font-family: Nunito Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 21px */
+  }
+}
+.bottom {
+  &__title {
+    color: #fff;
+    font-family: Nunito Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 16.8px */
   }
 }
