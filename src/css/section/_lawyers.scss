@@ -3,25 +3,27 @@
   background: #f7f7f7;
 
   &__cards {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    // justify-content: space-between;
+    grid-template-columns: repeat(auto-fill, minmax(312px, 1fr));
     margin-top: 48px;
-    position: relative;
   }
   &__card {
     max-width: 312px;
-    height: 414px;
+    min-height: 414px;
     display: flex;
     padding-bottom: 0px;
     flex-direction: column;
     align-items: center;
     background: #fff;
     box-shadow: 2px 2px 12px 0px rgba(33, 33, 33, 0.12);
+    transition: 0.5s;
+    position: relative;
   }
   &__cardop {
     position: absolute;
     max-width: 312px;
-    height: 414px;
+    min-height: 414px;
     display: flex;
     padding-bottom: 0px;
     flex-direction: column;
@@ -29,6 +31,7 @@
     background: #fff;
     box-shadow: 2px 2px 12px 0px rgba(33, 33, 33, 0.12);
     opacity: 0;
+
     &:hover {
       opacity: 1;
       cursor: url("../icons/cursorwhite.svg"), auto;
@@ -83,5 +86,83 @@
     bottom: 20px;
     border-left: 1px #4f8ff0 solid;
     border-bottom: 1px #4f8ff0 solid;
+  }
+}
+
+@media (max-width: 1290px) {
+  .lawyers {
+    &__title {
+      font-size: 24px;
+    }
+    &__subtitle {
+      max-width: 696px;
+    }
+    &__cards {
+      max-height: 414px;
+      display: flex;
+      overflow: scroll;
+      flex-wrap: nowrap;
+      gap: 0 24px;
+    }
+    &__card {
+      max-width: 300px;
+      height: 414px;
+    }
+    &__cardop {
+      max-width: 300px;
+      height: 414px;
+    }
+    &__img {
+      width: 300px;
+    }
+  }
+}
+@media (max-width: 540px) {
+  .lawyers {
+    &__title {
+      font-size: 20px;
+    }
+    &__subtitle {
+      font-size: 14px;
+      max-width: 342px;
+    }
+    &__cards {
+      max-height: 348px;
+      display: flex;
+      overflow: scroll;
+      flex-wrap: nowrap;
+      gap: 0 24px;
+    }
+    &__card {
+      max-width: 250px;
+      min-height: unset;
+      height: 348px;
+    }
+    &__cardop {
+      max-width: 250px;
+      height: 348px;
+      min-height: unset;
+    }
+    &__img {
+      max-width: 250px;
+
+      height: 235px;
+    }
+  }
+  .cardop {
+    &__span {
+      padding-top: 45px;
+      font-size: 12px;
+    }
+    &__subtitletop {
+      font-size: 10px;
+    }
+    &__subtitle {
+      font-size: 11px;
+    }
+    &__subtitlebottom {
+      font-size: 12px;
+      padding: 20px 0 40px;
+    }
   }
 }

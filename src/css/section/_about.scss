@@ -3,7 +3,7 @@
     padding: 80px 0;
   }
   &__img {
-    width: 535px;
+    max-width: 535px;
     height: 359px;
     flex-shrink: 0;
     background: #fff;
@@ -15,7 +15,7 @@
   }
   &__subtitle {
     max-width: 720px;
-    max-height: 424px;
+    // max-height: 424px;
   }
   &__hbtn {
     display: inline;
@@ -24,5 +24,31 @@
     display: inline;
   }
 }
-
-
+@media (max-width: 1280px) {
+  .about {
+    &__img {
+      display: none;
+    }
+    &__btn {
+      padding-top: 36px;
+      max-width: 696px;
+      margin: 0 auto;
+    }
+    // &__hbtn,
+    // &__sertbtn {
+    //   display: block;
+    // }
+    &__text,
+    &__hbtn,
+    &__sertbtn {
+      margin: 0 auto;
+    }
+    &__title,
+    &__span {
+      font-size: 24px;
+    }
+    &__subtitle {
+      max-width: 696px;
+    }
+  }
+}

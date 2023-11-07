@@ -2,30 +2,63 @@ header {
   // width: 1920px;
   position: relative;
 }
-.top {
+.header {
   position: absolute;
   width: 100%;
 }
-.top__contact {
+.header__contact {
   padding: 17.5px 0;
   display: flex;
   justify-content: space-between;
 }
 
-.top__navigation {
+.header__navigation {
   display: flex;
   justify-content: space-between;
 }
-.top__title {
+.header__title {
   width: 312px;
   height: 62px;
   padding: 22px 0 28px 0;
   display: flex;
   align-items: flex-start;
 }
-.top__link {
+.header__link {
   width: 679px;
   display: flex;
   justify-content: space-between;
   padding: 45px 0;
+}
+
+@media (max-width: 1024px) {
+  .header {
+    &__titleh1 {
+      font-size: 22px;
+      padding-top: 18px;
+    }
+    &__undertitle {
+      font-size: 16px;
+      padding-bottom: 19px;
+    }
+    &__link {
+      display: none;
+    }
+  }
+}
+
+
+@media (max-width: 540px) {
+  .header {
+     &__titleh1 {
+      font-size: 22px;
+      padding-top: 18px;
+    }
+    &__undertitle {
+      font-size: 16px;
+      padding-bottom: 19px;
+    }
+    &__nm:last-child {
+      display: none;
+    }
+  }
 }
