@@ -46,7 +46,52 @@
     &__title {
       font-size: 24px;
     }
-    &__card {
+
+    &__cards {
+      gap: 24px;
+      display: flex;
+      overflow: scroll;
     }
+    &__card {
+      min-width: 576px;
+    }
+  }
+  .about__btn {
+    max-width: unset;
+  }
+}
+@media (max-width: 540px) {
+  .review {
+    &__title {
+      font-size: 20px;
+    }
+    &__icon {
+      display: none;
+    }
+    &__cards {
+      gap: 24px;
+      display: flex;
+      overflow: scroll;
+    }
+    &__card {
+      min-width: 340px;
+      min-height: 303px;
+      padding: 24px;
+    }
+    &__img {
+      width: 50px;
+      height: 50px;
+    }
+  }
+  .info {
+    &__title {
+      width: 182px;
+      font-size: 18px;
+    }
+  }
+  .about__hbtn,
+  .about__sertbtn {
+    display: unset;
+    margin: 0 auto;
   }
 }

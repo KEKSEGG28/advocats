@@ -8,7 +8,7 @@
   max-width: 1320px;
   margin: 0 auto;
   box-sizing: content-box;
-  width: 100%;
+  padding: 0 16px;
 }
 
 .header__info {
@@ -990,6 +990,48 @@ header {
   .review__title {
     font-size: 24px;
   }
+  .review__cards {
+    gap: 24px;
+    display: flex;
+    overflow: scroll;
+  }
+  .review__card {
+    min-width: 576px;
+  }
+  .about__btn {
+    max-width: unset;
+  }
+}
+@media (max-width: 540px) {
+  .review__title {
+    font-size: 20px;
+  }
+  .review__icon {
+    display: none;
+  }
+  .review__cards {
+    gap: 24px;
+    display: flex;
+    overflow: scroll;
+  }
+  .review__card {
+    min-width: 340px;
+    min-height: 303px;
+    padding: 24px;
+  }
+  .review__img {
+    width: 50px;
+    height: 50px;
+  }
+  .info__title {
+    width: 182px;
+    font-size: 18px;
+  }
+  .about__hbtn,
+  .about__sertbtn {
+    display: unset;
+    margin: 0 auto;
+  }
 }
 .material {
   width: 100%;
@@ -1007,15 +1049,16 @@ header {
 }
 .material__cardopacity {
   position: absolute;
-  width: 424px;
-  height: 270px;
-  flex-shrink: 0;
+  min-height: 250px;
+  max-width: 424px;
+  min-width: 270px;
+  width: 100%;
   background: rgba(79, 143, 240, 0.4);
   opacity: 0;
 }
 .material__cardopacity:hover {
   max-width: 424px;
-  height: 270px;
+  min-height: 270px;
   background: rgba(79, 143, 240, 0.4);
   opacity: 1;
   cursor: url("../icons/cursor.svg"), auto;
@@ -1037,8 +1080,9 @@ header {
   position: relative;
   margin-top: 48px;
   max-width: 424px;
+  min-width: 250px;
   height: 481px;
-  flex-shrink: 0;
+  width: 100%;
 }
 .material__line {
   padding-top: 16px;
@@ -1047,7 +1091,7 @@ header {
   align-items: center;
 }
 .material__lineline {
-  width: 314px;
+  max-width: 314px;
   height: 1px;
   background: #f8f5f4;
 }
@@ -1080,6 +1124,51 @@ header {
   line-height: 150%; /* 24px */
 }
 
+@media (max-width: 1350px) {
+  .material__title {
+    font-size: 24px;
+  }
+  .material__subtitle {
+    max-width: 336px;
+  }
+  .material__cards {
+    gap: 24px;
+    display: flex;
+    overflow: scroll;
+  }
+  .material__card {
+    min-width: 336px;
+  }
+  .material__cardopacity {
+    min-width: 336px;
+    height: 270px;
+  }
+  .material__img {
+    min-height: 270px;
+  }
+  .material__image {
+    width: 100%;
+    height: 270px;
+  }
+}
+@media (max-width: 540px) {
+  .material__title {
+    font-size: 20px;
+  }
+  .material__subtitle {
+    font-size: 14px;
+  }
+  .material__cardtitle {
+    font-size: 14px;
+  }
+  .material__cardopacity {
+    min-width: 250px;
+    height: 200px;
+  }
+  .material__card {
+    min-width: 250px;
+  }
+}
 .flex__jcsb {
   display: flex;
   justify-content: space-between;

@@ -1,6 +1,7 @@
 .material {
   width: 100%;
   padding: 80px 0;
+
   &__cards {
     display: flex;
     justify-content: space-between;
@@ -15,15 +16,18 @@
   }
   &__cardopacity {
     position: absolute;
-    width: 424px;
-    height: 270px;
-    flex-shrink: 0;
+    // min-width: 424px;
+    min-height: 250px;
+    max-width: 424px;
+    min-width: 270px;
+    width: 100%;
+
     background: rgba(79, 143, 240, 0.4);
     opacity: 0;
 
     &:hover {
       max-width: 424px;
-      height: 270px;
+      min-height: 270px;
       background: rgba(79, 143, 240, 0.4);
       opacity: 1;
       cursor: url("../icons/cursor.svg"), auto;
@@ -46,8 +50,10 @@
     position: relative;
     margin-top: 48px;
     max-width: 424px;
+    min-width: 250px;
     height: 481px;
-    flex-shrink: 0;
+
+    width: 100%;
   }
   &__line {
     padding-top: 16px;
@@ -56,7 +62,7 @@
     align-items: center;
   }
   &__lineline {
-    width: 314px;
+    max-width: 314px;
     height: 1px;
     background: #f8f5f4;
   }
@@ -82,10 +88,63 @@
 }
 
 .material__img:hover + .material__text h3 {
-  color:  #4f8ff0;
+  color: #4f8ff0;
   font-family: Nunito Sans;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
   line-height: 150%; /* 24px */
+}
+@media (max-width: 1350px) {
+  .material {
+    &__title {
+      font-size: 24px;
+    }
+    &__subtitle {
+      max-width: 336px;
+    }
+
+    &__cards {
+      gap: 24px;
+      display: flex;
+      overflow: scroll;
+    }
+    &__card {
+      min-width: 336px;
+      // width: 100%;
+    }
+    &__cardopacity {
+      min-width: 336px;
+      height: 270px;
+    }
+    &__img {
+      // max-width: 336px;
+      min-height: 270px;
+    }
+    &__image {
+      width: 100%;
+      // max-width: 336px;
+      height: 270px;
+    }
+  }
+}
+@media (max-width: 540px) {
+  .material {
+    &__title {
+      font-size: 20px;
+    }
+    &__subtitle {
+      font-size: 14px;
+    }
+    &__cardtitle {
+      font-size: 14px;
+    }
+    &__cardopacity {
+      min-width: 250px;
+      height: 200px;
+    }
+    &__card {
+      min-width: 250px;
+    }
+  }
 }
