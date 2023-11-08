@@ -6,7 +6,7 @@
 
 .header__navigators {
   background: rgba(1, 1, 1, 0.76);
-  height: 112px;
+  min-height: 112px;
   flex-shrink: 0;
 }
 .header__nm {
@@ -16,10 +16,12 @@
   font-style: normal;
   font-weight: 600;
   line-height: 120%;
+  text-decoration: none;
   display: flex;
   align-items: center;
 }
 .header__nmcontact {
+  gap: 16px;
   display: flex;
   justify-content: space-between;
 }
@@ -30,6 +32,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: 150%;
+  text-decoration: none;
 }
 .header__titleh1 {
   color: #4f8ff0;
@@ -50,7 +53,7 @@
   line-height: 110%;
   text-transform: lowercase;
 }
-a {
+.header__alink {
   color: #fff;
   text-align: center;
   font-family: Nunito Sans;
@@ -273,13 +276,13 @@ a {
     line-height: 120%;
   }
   &__subtitletop {
-    color:  #222;
+    color: #222;
     text-align: center;
     font-family: Nunito Sans;
     font-size: 14px;
     font-style: normal;
     font-weight: 300;
-    line-height: 120%; 
+    line-height: 120%;
   }
 }
 .review {
@@ -359,7 +362,7 @@ a {
   background: #222;
   &__bottom {
     background: #181818;
-    height: 49px;
+    min-height: 49px;
   }
   &__title {
     max-width: 276px;

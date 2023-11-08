@@ -3,6 +3,10 @@
   &__bottom {
     margin-top: 80px;
   }
+  &__container {
+    align-items: center;
+    height: 49px;
+  }
   &__top {
     align-items: center;
   }
@@ -62,5 +66,42 @@
 .question {
   &__btn {
     margin: 48px 0;
+  }
+}
+
+@media (max-width: 1200px) {
+  .footer {
+    &__subtitle {
+      display: none;
+    }
+  }
+  .contact {
+    &__nav {
+      display: none;
+    }
+    &__titletwo {
+      font-size: 14px;
+    }
+  }
+}
+@media (max-width: 540px) {
+  .footer {
+    &__block {
+      flex-wrap: wrap;
+    }
+    &__bottom {
+      flex-wrap: wrap;
+      min-height: 74px;
+    }
+    &__container {
+      flex-direction: column;
+      align-items: center;
+      padding-top: 16px;
+    }
+  }
+  .question {
+    &__person {
+      padding-top: 45px;
+    }
   }
 }
