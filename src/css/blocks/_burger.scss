@@ -1,0 +1,61 @@
+.burger {
+  display: none;
+
+  &__check {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    opacity: 0;
+    z-index: 100;
+    cursor: pointer;
+
+    &:checked {
+      position: fixed;
+      top: 16px;
+      right: 16px;
+    }
+    &:checked ~ .burger__list {
+      transform: none;
+    }
+  }
+
+  &__list {
+    width: 290px;
+    background: #222;
+    height: 100hv;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: 38px 0;
+    z-index: 80;
+    transform: translateX(100%);
+    transition: 0.3s;
+  }
+  &__close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    z-index: 90;
+  }
+  &__link {
+    display: block;
+    padding: 12px 26px;
+  }
+}
+ul {
+  list-style-type: none;
+}
+
+@media (max-width: 1024px) {
+  .burger {
+    display: block;
+  }
+}
+@media (max-width: 375px) {
+  .burger {
+    &__list {
+      width: 100%;
+    }
+  }
+}

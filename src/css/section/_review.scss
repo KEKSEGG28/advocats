@@ -34,15 +34,29 @@
   }
   &__subtitle {
     padding-top: 16px;
+    color: #222;
+    font-family: Nunito Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
   &__info {
     width: 100%;
     padding: 0 24px;
   }
+  &__slider {
+    background: #4f8ff0;
+  }
 }
 
 @media (max-width: 1290px) {
   .review {
+    padding: 31px 0 40px;
     &__title {
       font-size: 24px;
     }
@@ -61,7 +75,11 @@
   }
 }
 @media (max-width: 540px) {
+  
   .review {
+    &__sliders {
+      display: none;
+    }
     &__title {
       font-size: 20px;
     }
@@ -70,6 +88,7 @@
     }
     &__cards {
       gap: 24px;
+      padding-top: 24px;
       display: flex;
       overflow: scroll;
     }

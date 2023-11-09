@@ -20,6 +20,9 @@
   &__block {
     padding-top: 48px;
   }
+  &__header {
+    align-items: center;
+  }
 }
 .contact {
   &__nav {
@@ -65,7 +68,7 @@
 }
 .question {
   &__btn {
-    margin: 48px 0;
+    margin-top: 48px;
   }
 }
 
@@ -86,17 +89,23 @@
 }
 @media (max-width: 540px) {
   .footer {
+    padding-top: 40px;
     &__block {
       flex-wrap: wrap;
+      padding-top: unset;
     }
     &__bottom {
       flex-wrap: wrap;
       min-height: 74px;
+      margin-top: unset;
     }
     &__container {
       flex-direction: column;
       align-items: center;
       padding-top: 16px;
+    }
+    &__line {
+      margin: 24px 0;
     }
   }
   .question {

@@ -53,6 +53,59 @@
                   <a class="header__alink" href="#">Контакты</a>
                 </nav>
               </div>
+              <div class="burger">
+                <input class="burger__check" type="checkbox" />
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M3 4H21V6H3V4ZM9 11H21V13H9V11ZM3 18H21V20H3V18Z"
+                    fill="white"
+                  />
+                </svg>
+
+                <ul class="burger__list">
+                  <svg
+                    class="burger__close"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6.4 19L5 17.6L10.6 12L5 6.4L6.4 5L12 10.6L17.6 5L19 6.4L13.4 12L19 17.6L17.6 19L12 13.4L6.4 19Z"
+                      fill="white"
+                    />
+                  </svg>
+                  <li>
+                    <a href="#" class="burger__link header__alink">Услуги</a>
+                  </li>
+                  <li>
+                    <a href="#" class="burger__link header__alink"
+                      >О Компании</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="burger__link header__alink"
+                      >Наши Юристы</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="burger__link header__alink">Отзывы</a>
+                  </li>
+                  <li>
+                    <a href="#" class="burger__link header__alink">Новости</a>
+                  </li>
+                  <li>
+                    <a href="#" class="burger__link header__alink">Контакты</a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -61,7 +114,7 @@
     <main>
       <!-- фон -->
       <section class="hero">
-        <div class="container">
+        <div class="container hero__container">
           <div class="hero__title">
             <h2 class="hero__h">
               Оказываем весь комплекс
@@ -119,7 +172,7 @@
         <div class="container">
           <div class="service__text">
             <h2 class="service__title">Наши услуги</h2>
-            <button class="service__titlebtn titlebtn"></button>
+            <div class="service__titlebtn titlebtn"></div>
             <p class="service__subtitle">
               Давно выяснено, что при оценке дизайна и композиции читаемый текст
               мешает сосредоточиться. Lorem Ipsum используют потому, что тот
@@ -393,7 +446,7 @@
                   Юридическая компания
                   <span class="about__span">правозащитник</span>
                 </h2>
-                <button class="titlebtn"></button>
+                <div class="titlebtn"></div>
                 <p class="about__subtitle">
                   Давно выяснено, что при оценке дизайна и композиции читаемый
                   текст мешает сосредоточиться. Lorem Ipsum используют потому,
@@ -426,7 +479,7 @@
       <section class="lawyers">
         <div class="container">
           <h2 class="lawyers__title title">Наши юристы</h2>
-          <button class="lawyers__titlebtn titlebtn"></button>
+          <div class="lawyers__titlebtn titlebtn"></div>
           <p class="lawyers__subtitle">
             Давно выяснено, что при оценке дизайна и композиции читаемый текст
             мешает сосредоточиться. Lorem Ipsum используют потому, что тот
@@ -492,7 +545,7 @@
             <div class="lawyers__card">
               <div class="lawyers__cardop">
                 <span class="cardop__span">Горюнова Полина Алексеевна</span>
-                <p class="cardop__subtittop">Юридический консультант</p>
+                <p class="cardop__subtitletop">Юридический консультант</p>
                 <p class="cardop__subtitle">
                   Есть много вариантов Lorem Ipsum, но большинство из них имеет
                   не всегда приемлемые модификации, например, юмористические
@@ -517,6 +570,7 @@
                 <p class="card__post">Юрист международного права</p>
               </div>
             </div>
+
             <div class="lawyers__card">
               <div class="lawyers__cardop">
                 <span class="cardop__span">Горюнова Полина Алексеевна</span>
@@ -551,10 +605,37 @@
       <!-- секция отзывов  -->
       <section class="review">
         <div class="container">
-          <div class="title">
+          <div class="title flex__jcsb">
             <h2 class="review__title">Что о нас говорят клиенты</h2>
+            <div class="hero__sliders flex__jcc_aic review__sliders">
+              <svg
+                width="21"
+                height="20"
+                viewBox="0 0 21 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M14.3055 18.3333L5.97217 9.99996L14.3055 1.66663L15.7847 3.14579L8.9305 9.99996L15.7847 16.8541L14.3055 18.3333Z"
+                  fill="#4F8FF0"
+                />
+              </svg>
+              <div class="hero__sliderbtn review__slider"></div>
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6.68742 18.3333L5.20825 16.8541L12.0624 9.99996L5.20825 3.14579L6.68742 1.66663L15.0208 9.99996L6.68742 18.3333Z"
+                  fill="#4F8FF0"
+                />
+              </svg>
+            </div>
           </div>
-          <button class="titlebtn"></button>
+          <div class="titlebtn"></div>
           <div class="review__cards">
             <div class="review__card">
               <div class="review__content">
@@ -621,7 +702,7 @@
       <section class="material">
         <div class="container">
           <h2 class="material__title title">Полезные Материалы</h2>
-          <button class="material__titlebtn titlebtn"></button>
+          <div class="material__titlebtn titlebtn"></div>
           <p class="material__subtitle subtitle">
             Давно выяснено, что при оценке дизайна и композиции читаемый текст
             мешает сосредоточиться. Lorem Ipsum используют потому, что тот
@@ -801,19 +882,18 @@
           <div class="footer__line"></div>
           <div class="footer__block flex__jcsb">
             <div class="block__contact">
-              <a href="#"
-                ><div class="contact__adress flex__jcsb flex__jcc_aic">
-                  <div class="contact__icon flex__jcc_aic">
-                    <img src="./src/icons/map.svg" alt="" />
-                  </div>
-                  <div class="contact__title">
-                    <p class="contact__titleone">Наш адрес</p>
-                    <p class="contact__titletwo">
-                      г. Одинцово, пр. Будапештсткая, 40
-                    </p>
-                  </div>
-                </div></a
-              >
+              <div class="contact__adress flex__jcsb flex__jcc_aic">
+                <div class="contact__icon flex__jcc_aic">
+                  <img src="./src/icons/map.svg" alt="" />
+                </div>
+                <div class="contact__title">
+                  <p class="contact__titleone">Наш адрес</p>
+                  <p class="contact__titletwo">
+                    г. Одинцово, пр. Будапештсткая, 40
+                  </p>
+                </div>
+              </div>
+
               <a href="#"
                 ><div class="contact__tel flex__jcsb flex__jcc_aic">
                   <div class="contact__icon flex__jcc_aic">
@@ -825,15 +905,17 @@
                   </div>
                 </div></a
               >
-              <div class="contact__mail flex__jcsb flex__jcc_aic">
-                <div class="contact__icon flex__jcc_aic">
-                  <img src="./src/icons/fmail.svg" alt="" />
-                </div>
-                <div class="contact__title">
-                  <p class="contact__titleone">Корреспонденция</p>
-                  <p class="contact__titletwo">janis62@yahoo.com</p>
-                </div>
-              </div>
+              <a href="#">
+                <div class="contact__mail flex__jcsb flex__jcc_aic">
+                  <div class="contact__icon flex__jcc_aic">
+                    <img src="./src/icons/fmail.svg" alt="" />
+                  </div>
+                  <div class="contact__title">
+                    <p class="contact__titleone">Корреспонденция</p>
+                    <p class="contact__titletwo">janis62@yahoo.com</p>
+                  </div>
+                </div></a
+              >
             </div>
             <div class="contact__nav">
               <a class="footer__nav" href="#">Услуги</a>

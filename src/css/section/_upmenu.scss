@@ -46,11 +46,13 @@
     padding-top: 192px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
   &__bullet {
     display: flex;
     align-items: end;
     gap: 8px;
+    margin-bottom: 36px;
   }
 }
 @media (max-width: 1024px) {
@@ -66,10 +68,13 @@
     }
   }
 }
-@media (max-width: 680px) {
+@media (max-width: 540px) {
   .hero {
     &__h {
       font-size: 18px;
+    }
+    &__title {
+      padding-top: 142px;
     }
     &__span {
       font-size: 30px;
@@ -79,6 +84,9 @@
     }
     &__slider {
       display: none;
+    }
+    &__container {
+      padding: 60px 0;
     }
   }
 }

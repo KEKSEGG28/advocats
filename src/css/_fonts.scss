@@ -94,6 +94,7 @@
     border: 2px solid #4f8ff0;
     background: #fff;
     color: #4f8ff0;
+    cursor: url("../icons/cursorwhite.svg"), auto;
   }
 }
 .hero__bullettwo,
@@ -148,7 +149,9 @@
   background: #4f8ff0;
   margin-top: 10px;
 }
-
+a:hover {
+  cursor: url("../icons/cursor.svg"), auto;
+}
 .about {
   &__title {
     color: #222;
