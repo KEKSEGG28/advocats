@@ -52,6 +52,22 @@
   &__slider {
     background: #4f8ff0;
   }
+  &__img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    object-position: center;
+    background: lightgrey;
+    display: block;
+  }
+  &__image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    object-position: center;
+    background: lightgrey;
+    display: block;
+  }
 }
 
 @media (max-width: 1290px) {
@@ -75,7 +91,6 @@
   }
 }
 @media (max-width: 540px) {
-  
   .review {
     &__sliders {
       display: none;

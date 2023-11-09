@@ -171,6 +171,10 @@
   margin-top: 10px;
 }
 
+a {
+  text-decoration: none;
+}
+
 a:hover {
   cursor: url("../icons/cursor.svg"), auto;
 }
@@ -253,6 +257,10 @@ a:hover {
   font-weight: 300;
   line-height: 120%;
   text-transform: lowercase;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 .card__text {
   padding: 24px 16px;
@@ -285,6 +293,10 @@ a:hover {
   font-style: normal;
   font-weight: 300;
   line-height: 120%;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 .cardop__subtitlebottom {
   color: #222;
@@ -364,7 +376,11 @@ a:hover {
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 120%; /* 16.8px */
+  line-height: 120%;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 .material__time {
   color: #222;
@@ -410,6 +426,10 @@ a:hover {
   font-weight: 400;
   line-height: 120%; /* 19.2px */
   text-transform: lowercase;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 .footer__nav {
   color: #fff;
@@ -559,7 +579,7 @@ header {
   }
 }
 .hero {
-  background-image: url("../image/bg.jpg");
+  background-image: url("../image/bg.webp");
   background-position: 100%;
   background-size: auto;
   background-repeat: no-repeat;
@@ -854,6 +874,16 @@ header {
   padding: 80px 0;
   background: #f7f7f7;
 }
+.lawyers__img {
+  width: 100%;
+  height: 320px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  background: lightgrey;
+  display: block;
+}
 .lawyers__cards {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(312px, 1fr));
@@ -882,6 +912,7 @@ header {
   background: #fff;
   box-shadow: 2px 2px 12px 0px rgba(33, 33, 33, 0.12);
   opacity: 0;
+  transition: 0.3s;
 }
 .lawyers__cardop:hover {
   opacity: 1;
@@ -1061,6 +1092,26 @@ header {
 .review__slider {
   background: #4f8ff0;
 }
+.review__img {
+  width: 80px;
+  height: 80px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  background: lightgrey;
+  display: block;
+}
+.review__image {
+  width: 80px;
+  height: 80px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  background: lightgrey;
+  display: block;
+}
 
 @media (max-width: 1290px) {
   .review {
@@ -1129,13 +1180,19 @@ header {
 }
 .material__image {
   width: 100%;
+  height: 270px;
   overflow: hidden;
   -o-object-fit: cover;
      object-fit: cover;
   background: lightgray;
 }
 .material__img {
-  max-height: 270px;
+  width: 100%;
+  height: 270px;
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background: lightgray;
 }
 .material__img:hover + h3 {
   color: red;
@@ -1273,12 +1330,17 @@ header {
   .material__card {
     min-width: 250px;
   }
+  .material__img:hover + .material__text h3 {
+    color: #4f8ff0;
+    font-family: Nunito Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+  }
 }
 .footer {
   padding: 80px 0 0 0;
-}
-.footer__bottom {
-  margin-top: 80px;
 }
 .footer__container {
   align-items: center;
@@ -1323,6 +1385,16 @@ header {
 .contact__tel, .contact__mail {
   padding-top: 24px;
 }
+.contact__img {
+  max-width: 65px;
+  height: 65px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  background: lightgrey;
+  display: block;
+}
 
 .person__subtext {
   color: #fff;
@@ -1334,6 +1406,10 @@ header {
   max-width: 424px;
   width: 100%;
   padding-top: 16px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 .person__text {
   width: 100%;
@@ -1341,7 +1417,7 @@ header {
 }
 
 .question__btn {
-  margin-top: 48px;
+  margin: 48px 0 40px;
 }
 
 @media (max-width: 1200px) {

@@ -11,12 +11,18 @@
   }
   &__image {
     width: 100%;
+    height: 270px;
     overflow: hidden;
     object-fit: cover;
     background: lightgray;
   }
   &__img {
-    max-height: 270px;
+   
+    width: 100%;
+    height: 270px;
+    overflow: hidden;
+    object-fit: cover;
+    background: lightgray;
     &:hover + h3 {
       color: red;
     }
@@ -28,7 +34,7 @@
     max-width: 424px;
     min-width: 270px;
     width: 100%;
-
+    // transition: 0.3s;
     background: rgba(79, 143, 240, 0.4);
     opacity: 0;
 
@@ -162,5 +168,13 @@
     &__card {
       min-width: 250px;
     }
+  }
+  .material__img:hover + .material__text h3 {
+    color: #4f8ff0;
+    font-family: Nunito Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
   }
 }

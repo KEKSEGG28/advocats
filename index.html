@@ -45,12 +45,12 @@
               </div>
               <div class="header__nav">
                 <nav class="header__link">
-                  <a class="header__alink" href="#">Услуги</a>
-                  <a class="header__alink" href="#">О компании</a>
-                  <a class="header__alink" href="#">Наши юристы</a>
-                  <a class="header__alink" href="#">Отзывы</a>
-                  <a class="header__alink" href="#">Новости</a>
-                  <a class="header__alink" href="#">Контакты</a>
+                  <a class="header__alink" href="#service">Услуги</a>
+                  <a class="header__alink" href="#about">О компании</a>
+                  <a class="header__alink" href="#lawyers">Наши юристы</a>
+                  <a class="header__alink" href="#review">Отзывы</a>
+                  <a class="header__alink" href="#material">Новости</a>
+                  <a class="header__alink" href="#footer">Контакты</a>
                 </nav>
               </div>
               <div class="burger">
@@ -168,7 +168,7 @@
         </div>
       </section>
       <!-- секция услуги -->
-      <section class="service">
+      <section class="service" id="service">
         <div class="container">
           <div class="service__text">
             <h2 class="service__title">Наши услуги</h2>
@@ -237,10 +237,10 @@
                 />
               </svg>
               <div class="service__cardtext">
-                <h2 class="service__cardtitle">Банкротство физических лиц</h2>
+                <h2 class="service__cardtitle">Сопровождение сделок</h2>
                 <p class="service__cardsubtitle">
-                  Процедуру банкротства физических лиц в России регулирует закон
-                  «О несостоятельности (банкротстве)».
+                  Инициирование, оформление, осуществление сделки и достижение
+                  результата — это именно то, чем мы занимаемся каждый день.
                 </p>
                 <img
                   class="service__topleft"
@@ -279,10 +279,10 @@
                 />
               </svg>
               <div class="service__cardtext">
-                <h2 class="service__cardtitle">Банкротство физических лиц</h2>
+                <h2 class="service__cardtitle">Корпоративные споры</h2>
                 <p class="service__cardsubtitle">
-                  Процедуру банкротства физических лиц в России регулирует закон
-                  «О несостоятельности (банкротстве)».
+                  Корпоративные споры – споры, связанные с созданием юрлица,
+                  управлением или участием в нем.
                 </p>
                 <img
                   class="service__topleft"
@@ -321,10 +321,10 @@
                 />
               </svg>
               <div class="service__cardtext">
-                <h2 class="service__cardtitle">Банкротство физических лиц</h2>
+                <h2 class="service__cardtitle">Недвижимость и строительство</h2>
                 <p class="service__cardsubtitle">
-                  Процедуру банкротства физических лиц в России регулирует закон
-                  «О несостоятельности (банкротстве)».
+                  Консультируем по различным вопросам в области недвижимости,
+                  включая градостроительное регулирование, земельные отношения.
                 </p>
                 <img
                   class="service__topleft"
@@ -363,10 +363,11 @@
                 />
               </svg>
               <div class="service__cardtext">
-                <h2 class="service__cardtitle">Банкротство физических лиц</h2>
+                <h2 class="service__cardtitle">Возврат страховых премий</h2>
                 <p class="service__cardsubtitle">
-                  Процедуру банкротства физических лиц в России регулирует закон
-                  «О несостоятельности (банкротстве)».
+                  Для возврата страховой премии нужно подготовить следующий
+                  пакет документов: паспорт страхователя; оригинал страхового
+                  полиса
                 </p>
                 <img
                   class="service__topleft"
@@ -405,10 +406,10 @@
                 />
               </svg>
               <div class="service__cardtext">
-                <h2 class="service__cardtitle">Банкротство физических лиц</h2>
+                <h2 class="service__cardtitle">Налоговое право и споры</h2>
                 <p class="service__cardsubtitle">
-                  Процедуру банкротства физических лиц в России регулирует закон
-                  «О несостоятельности (банкротстве)».
+                  Сопровождение налоговых проверок на любой стадии, анализ и
+                  подготовка документов, защита при налоговых спорах.
                 </p>
                 <img
                   class="service__topleft"
@@ -437,7 +438,7 @@
         </div>
       </section>
       <!-- секция о нас -->
-      <section class="about">
+      <section class="about" id="about">
         <div class="container">
           <div class="about__container">
             <div class="about__content">
@@ -466,7 +467,17 @@
                   (например, юмористические варианты).
                 </p>
               </div>
-              <img class="about__img" src="./src/image/about.jpg" alt="Book" />
+              <div class="about__img">
+                <img
+                  class="about__img"
+                  src="./src/image/about.webp"
+                  srcset="
+                    ./src/image/about.webp   1x,
+                    ./src/image/about2x.webp 2x
+                  "
+                  alt="Book"
+                />
+              </div>
             </div>
             <div class="about__btn">
               <button class="about__hbtn btn">История компании</button>
@@ -476,7 +487,7 @@
         </div>
       </section>
       <!-- секция адвокатов -->
-      <section class="lawyers">
+      <section class="lawyers" id="lawyers">
         <div class="container">
           <h2 class="lawyers__title title">Наши юристы</h2>
           <div class="lawyers__titlebtn titlebtn"></div>
@@ -504,11 +515,17 @@
                 <div class="cardop__rb"></div>
                 <div class="cardop__lb"></div>
               </div>
-              <img
-                class="lawyers__img"
-                src="./src/image/card1.jpg"
-                alt="Горюнова Полина Алексеевна"
-              />
+              <div class="lawyers__img">
+                <img
+                  class="lawyers__img"
+                  src="./src/image/card1.webp"
+                  srcset="
+                    ./src/image/card1.webp   1x,
+                    ./src/image/card12x.webp 2x
+                  "
+                  alt="Горюнова Полина Алексеевна"
+                />
+              </div>
               <div class="card__text">
                 <h2 class="card__name">Горюнова Полина Алексеевна</h2>
                 <p class="card__post">Юрист международного права</p>
@@ -516,7 +533,43 @@
             </div>
             <div class="lawyers__card">
               <div class="lawyers__cardop">
-                <span class="cardop__span">Горюнова Полина Алексеевна</span>
+                <span class="cardop__span">Миронов Александр Германович</span>
+                <p class="cardop__subtitletop">
+                  Кредитный адвокат, банковский юрист
+                </p>
+                <p class="cardop__subtitle">
+                  Есть много вариантов Lorem Ipsum, но большинство из них имеет
+                  не всегда приемлемые модификации, например, юмористические
+                  вставки или слова, которые даже отдалённо не напоминают
+                  латынь.
+                </p>
+                <p class="cardop__subtitlebottom">
+                  12 лет юридической практики
+                </p>
+                <div class="cardop__rt"></div>
+                <div class="cardop__lt"></div>
+                <div class="cardop__rb"></div>
+                <div class="cardop__lb"></div>
+              </div>
+              <div class="lawyers__img">
+                <img
+                  class="lawyers__img"
+                  src="./src/image/card2.webp"
+                  srcset="
+                    ./src/image/card2.webp   1x,
+                    ./src/image/card22x.webp 2x
+                  "
+                  alt="Миронов Александр Германович"
+                />
+              </div>
+              <div class="card__text">
+                <h2 class="card__name">Миронов Александр Германович</h2>
+                <p class="card__post">Кредитный адвокат, банковский юрист</p>
+              </div>
+            </div>
+            <div class="lawyers__card">
+              <div class="lawyers__cardop">
+                <span class="cardop__span">Шестакова Елизавета Егоровна</span>
                 <p class="cardop__subtitletop">Юридический консультант</p>
                 <p class="cardop__subtitle">
                   Есть много вариантов Lorem Ipsum, но большинство из них имеет
@@ -532,49 +585,27 @@
                 <div class="cardop__rb"></div>
                 <div class="cardop__lb"></div>
               </div>
-              <img
-                class="lawyers__img"
-                src="./src/image/card1.jpg"
-                alt="Горюнова Полина Алексеевна"
-              />
-              <div class="card__text">
-                <h2 class="card__name">Горюнова Полина Алексеевна</h2>
-                <p class="card__post">Юрист международного права</p>
+              <div class="lawyers__img">
+                <img
+                  class="lawyers__img"
+                  src="./src/image/card3.webp"
+                  srcset="
+                    ./src/image/card3.webp   1x,
+                    ./src/image/card32x.webp 2x
+                  "
+                  alt="Шестакова Елизавета Егоровна"
+                />
               </div>
-            </div>
-            <div class="lawyers__card">
-              <div class="lawyers__cardop">
-                <span class="cardop__span">Горюнова Полина Алексеевна</span>
-                <p class="cardop__subtitletop">Юридический консультант</p>
-                <p class="cardop__subtitle">
-                  Есть много вариантов Lorem Ipsum, но большинство из них имеет
-                  не всегда приемлемые модификации, например, юмористические
-                  вставки или слова, которые даже отдалённо не напоминают
-                  латынь.
-                </p>
-                <p class="cardop__subtitlebottom">
-                  12 лет юридической практики
-                </p>
-                <div class="cardop__rt"></div>
-                <div class="cardop__lt"></div>
-                <div class="cardop__rb"></div>
-                <div class="cardop__lb"></div>
-              </div>
-              <img
-                class="lawyers__img"
-                src="./src/image/card1.jpg"
-                alt="Горюнова Полина Алексеевна"
-              />
               <div class="card__text">
-                <h2 class="card__name">Горюнова Полина Алексеевна</h2>
-                <p class="card__post">Юрист международного права</p>
+                <h2 class="card__name">Шестакова Елизавета Егоровна</h2>
+                <p class="card__post">Юридический консультант</p>
               </div>
             </div>
 
             <div class="lawyers__card">
               <div class="lawyers__cardop">
-                <span class="cardop__span">Горюнова Полина Алексеевна</span>
-                <p class="cardop__subtitletop">Юридический консультант</p>
+                <span class="cardop__span">Архипов Максим Константинович</span>
+                <p class="cardop__subtitletop">Юрист международного права</p>
                 <p class="cardop__subtitle">
                   Есть много вариантов Lorem Ipsum, но большинство из них имеет
                   не всегда приемлемые модификации, например, юмористические
@@ -589,13 +620,19 @@
                 <div class="cardop__rb"></div>
                 <div class="cardop__lb"></div>
               </div>
-              <img
-                class="lawyers__img"
-                src="./src/image/card1.jpg"
-                alt="Горюнова Полина Алексеевна"
-              />
+              <div class="lawyers__img">
+                <img
+                  class="lawyers__img"
+                  src="./src/image/card4.webp"
+                  srcset="
+                    ./src/image/card4.webp   1x,
+                    ./src/image/card42x.webp 2x
+                  "
+                  alt="Архипов Максим Константинович"
+                />
+              </div>
               <div class="card__text">
-                <h2 class="card__name">Горюнова Полина Алексеевна</h2>
+                <h2 class="card__name">Архипов Максим Константинович</h2>
                 <p class="card__post">Юрист международного права</p>
               </div>
             </div>
@@ -603,7 +640,7 @@
         </div>
       </section>
       <!-- секция отзывов  -->
-      <section class="review">
+      <section class="review" id="review">
         <div class="container">
           <div class="title flex__jcsb">
             <h2 class="review__title">Что о нас говорят клиенты</h2>
@@ -639,11 +676,17 @@
           <div class="review__cards">
             <div class="review__card">
               <div class="review__content">
-                <img
-                  class="review__img"
-                  src="./src/image/reviewone.jpg"
-                  alt="Логинова Анастасия"
-                />
+                <div class="review__img">
+                  <img
+                    class="review__image"
+                    src="./src/image/reviewone.webp"
+                    srcset="
+                      ./src/image/reviewone.webp   1x,
+                      ./src/image/reviewone2x.webp 2x
+                    "
+                    alt="Логинова Анастасия"
+                  />
+                </div>
                 <div class="review__info">
                   <p class="info__subtitle">ООО “ИТ Консалтинг”</p>
                   <p class="info__title">Логинова Анастасия</p>
@@ -666,14 +709,20 @@
             </div>
             <div class="review__card">
               <div class="review__content">
-                <img
-                  class="review__img"
-                  src="./src/image/reviewone.jpg"
-                  alt="Логинова Анастасия"
-                />
+                <div class="review__img">
+                  <img
+                    class="review__image"
+                    src="./src/image/reviewtwo.webp"
+                    srcset="
+                      ./src/image/reviewtwo.webp   1x,
+                      ./src/image/reviewtwo2x.webp 2x
+                    "
+                    alt="Макаров Сергей"
+                  />
+                </div>
                 <div class="review__info">
-                  <p class="info__subtitle">ООО “ИТ Консалтинг”</p>
-                  <p class="info__title">Логинова Анастасия</p>
+                  <p class="info__subtitle">АО “ПРОМАРШ”</p>
+                  <p class="info__title">Макаров Сергей</p>
                 </div>
 
                 <img
@@ -699,7 +748,7 @@
         </div>
       </section>
       <!-- секция материалов -->
-      <section class="material">
+      <section class="material" id="material">
         <div class="container">
           <h2 class="material__title title">Полезные Материалы</h2>
           <div class="material__titlebtn titlebtn"></div>
@@ -736,11 +785,17 @@
                   </div>
                   <!-- <h3 class="cardopacity__title">Воистину радостный звук: шёпот бессменных лидеров</h3> -->
                 </div>
-                <img
-                  class="material__image"
-                  src="./src/image/material1.jpg"
-                  alt="zdanie"
-                />
+                <div class="material__image">
+                  <img
+                    class="material__image"
+                    src="./src/image/material1.webp"
+                    srcset="
+                      ./src/image/material1.webp   1x,
+                      ./src/image/material12x.webp 2x
+                    "
+                    alt="zdanie"
+                  />
+                </div>
               </div>
 
               <div class="material__text">
@@ -785,26 +840,32 @@
                     </svg>
                   </div>
                 </div>
-                <img
-                  class="material__image"
-                  src="./src/image/material1.jpg"
-                  alt="zdanie"
-                />
+                <div class="material__image">
+                  <img
+                    class="material__image"
+                    src="./src/image/material2.webp"
+                    srcset="
+                      ./src/image/material2.webp   1x,
+                      ./src/image/material22x.webp 2x
+                    "
+                    alt="zdanie"
+                  />
+                </div>
               </div>
 
               <div class="material__text">
                 <h3 class="material__cardtitle">
-                  Воистину радостный звук: шёпот бессменных лидеров
+                  Франция намерена исследовать, почему объемы выросли
                 </h3>
                 <div class="material__line">
                   <p class="material__time">24 апр. 2023 г.</p>
                   <div class="material__lineline"></div>
                 </div>
                 <p class="material__cardsubtitle">
-                  Предварительные выводы неутешительны: синтетическое
-                  тестирование, а также свежий взгляд на привычные вещи —
-                  безусловно открывает новые горизонты для экономической
-                  целесообразности принимаемых решений.
+                  Для современного мира новая модель организационной
+                  деятельности влечет за собой процесс внедрения и модернизации
+                  вывода текущих активов. Являясь всего лишь частью общей
+                  картины, базовые сценарии поведения...
                 </p>
               </div>
             </div>
@@ -834,26 +895,31 @@
                     </svg>
                   </div>
                 </div>
-                <img
-                  class="material__image"
-                  src="./src/image/material1.jpg"
-                  alt="zdanie"
-                />
+                <div class="material__img">
+                  <img
+                    class="material__image"
+                    src="./src/image/material3.webp"
+                    srcset="
+                      ./src/image/material3.webp   1x,
+                      ./src/image/material32x.webp 2x
+                    "
+                    alt="zdanie"
+                  />
+                </div>
               </div>
 
               <div class="material__text">
                 <h3 class="material__cardtitle">
-                  Воистину радостный звук: шёпот бессменных лидеров
+                  Сплочённость команды профессионалов продолжает удивлять
                 </h3>
                 <div class="material__line">
-                  <p class="material__time">24 апр. 2023 г.</p>
+                  <p class="material__time">02 фев. 2023 г.</p>
                   <div class="material__lineline"></div>
                 </div>
                 <p class="material__cardsubtitle">
-                  Предварительные выводы неутешительны: синтетическое
-                  тестирование, а также свежий взгляд на привычные вещи —
-                  безусловно открывает новые горизонты для экономической
-                  целесообразности принимаемых решений.
+                  Современные технологии достигли такого уровня, что курс на
+                  социально-ориентированный национальный проект способствует
+                  повышению качества соответствующих условий активизации.
                 </p>
               </div>
             </div>
@@ -862,7 +928,7 @@
         </div>
       </section>
       <!-- футер -->
-      <footer class="footer">
+      <footer class="footer" id="footer">
         <div class="container">
           <div class="footer__header flex__jcsb">
             <a href=""
@@ -900,7 +966,7 @@
                     <img src="./src/icons/fphone.svg" alt="" />
                   </div>
                   <div class="contact__title">
-                    <p class="contact__titleone">Запись на консультанцию</p>
+                    <p class="contact__titleone">Запись на консультацию</p>
                     <p class="contact__titletwo">+7 (922) 022-94-82</p>
                   </div>
                 </div></a
@@ -918,16 +984,31 @@
               >
             </div>
             <div class="contact__nav">
-              <a class="footer__nav" href="#">Услуги</a>
-              <a class="footer__nav" href="#">о компании</a>
-              <a class="footer__nav" href="#">сертификаты</a>
-              <a class="footer__nav" href="#">отзывы</a>
-              <a class="footer__nav" href="#">Полезные Материалы</a>
-              <a class="footer__nav" href="#">благотворительность</a>
+              <a class="footer__nav" href="#service">Услуги</a>
+              <a class="footer__nav" href="#about">о компании</a>
+              <a class="footer__nav" href="#lawyers">сертификаты</a>
+              <a class="footer__nav" href="#review">отзывы</a>
+              <a class="footer__nav" href="#material">Полезные Материалы</a>
+              <a
+                class="footer__nav"
+                target="_blank"
+                href="https://ru.wikipedia.org/wiki/%D0%91%D0%BB%D0%B0%D0%B3%D0%BE%D1%82%D0%B2%D0%BE%D1%80%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D1%81%D1%82%D1%8C"
+                >благотворительность</a
+              >
             </div>
             <div class="contact__question">
               <div class="question__person flex__jcsb">
-                <img src="./src/icons/footer.jpg" alt="#" />
+                <div class="contact__img">
+                  <img
+                    class="contact__img"
+                    src="./src/image/footer.webp"
+                    srcset="
+                      ./src/image/footer.webp   1x,
+                      ./src/image/footer2x.webp 2x
+                    "
+                    alt="#"
+                  />
+                </div>
                 <div class="person__text">
                   <h3 class="person__title">Миронов Александр</h3>
                   <p class="person__subtitle">Ведущий юрист</p>
