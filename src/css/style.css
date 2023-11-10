@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .container {
   max-width: 1320px;
   margin: 0 auto;
@@ -205,7 +209,7 @@ a:hover {
   font-weight: 400;
   line-height: 150%;
   text-align: justify;
-  padding-top: 24px;
+  margin-top: 24px;
 }
 .about__sertbtn {
   border: 2px solid #e6e6e6;
@@ -613,13 +617,13 @@ header {
   font-style: normal;
   font-weight: 400;
   line-height: 120%; /* 24px */
-  padding-top: 8px;
+  margin-top: 8px;
 }
 .hero__title {
   padding-top: 262px;
 }
 .hero__slider {
-  padding-top: 192px;
+  margin-top: 192px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -696,7 +700,7 @@ header {
   font-style: normal;
   font-weight: 400;
   line-height: 120%;
-  padding-top: 24px;
+  margin-top: 24px;
 }
 .service__titlebtn {
   display: block;
@@ -733,7 +737,7 @@ header {
   fill: white;
 }
 .service__cardtext {
-  padding-top: 15px;
+  margin-top: 15px;
 }
 .service__topleft {
   position: absolute;
@@ -1049,7 +1053,7 @@ header {
   background-repeat: no-repeat;
 }
 .review__cards {
-  padding-top: 48px;
+  margin-top: 48px;
   display: flex;
   justify-content: space-between;
 }
@@ -1073,7 +1077,7 @@ header {
   height: 55px;
 }
 .review__subtitle {
-  padding-top: 16px;
+  margin-top: 16px;
   color: #222;
   font-family: Nunito Sans;
   font-size: 14px;
@@ -1101,6 +1105,9 @@ header {
      object-position: center;
   background: lightgrey;
   display: block;
+  border-radius: 50%;
+  flex-shrink: 0;
+  overflow: hidden;
 }
 .review__image {
   width: 80px;
@@ -1357,7 +1364,7 @@ header {
   background: #8c8c8c;
 }
 .footer__block {
-  padding-top: 48px;
+  margin-top: 48px;
 }
 .footer__header {
   align-items: center;
@@ -1380,10 +1387,10 @@ header {
 }
 .contact__title {
   width: 100%;
-  padding-left: 24px;
+  margin-left: 24px;
 }
 .contact__tel, .contact__mail {
-  padding-top: 24px;
+  margin-top: 24px;
 }
 .contact__img {
   max-width: 65px;
@@ -1394,6 +1401,9 @@ header {
      object-position: center;
   background: lightgrey;
   display: block;
+  border-radius: 50%;
+  flex-shrink: 0;
+  overflow: hidden;
 }
 
 .person__subtext {
@@ -1405,7 +1415,7 @@ header {
   line-height: 150%;
   max-width: 424px;
   width: 100%;
-  padding-top: 16px;
+  margin-top: 16px;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
@@ -1413,7 +1423,7 @@ header {
 }
 .person__text {
   width: 100%;
-  padding-left: 24px;
+  margin-left: 24px;
 }
 
 .question__btn {
@@ -1437,7 +1447,7 @@ header {
   }
   .footer__block {
     flex-wrap: wrap;
-    padding-top: unset;
+    margin-top: unset;
   }
   .footer__bottom {
     flex-wrap: wrap;
