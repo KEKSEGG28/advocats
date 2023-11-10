@@ -89,6 +89,7 @@
   text-transform: uppercase;
   margin: 0 auto;
   margin-top: 48px;
+  height: 49px;
 
   &:hover {
     border: 2px solid #4f8ff0;
@@ -276,7 +277,7 @@ a:hover {
     font-weight: 300;
     line-height: 120%;
     display: -webkit-box;
-    -webkit-line-clamp: 5;
+    -webkit-line-clamp: 8;
     -webkit-box-orient: vertical;
     overflow: hidden;
   }

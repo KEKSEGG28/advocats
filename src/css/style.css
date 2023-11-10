@@ -12,7 +12,7 @@ html {
   max-width: 1320px;
   margin: 0 auto;
   box-sizing: content-box;
-  padding: 0 16px;
+  padding: 0 24px;
 }
 
 .header__info {
@@ -112,6 +112,7 @@ html {
   text-transform: uppercase;
   margin: 0 auto;
   margin-top: 48px;
+  height: 49px;
 }
 .hero__button:hover,
 .btn:hover {
@@ -298,7 +299,7 @@ a:hover {
   font-weight: 300;
   line-height: 120%;
   display: -webkit-box;
-  -webkit-line-clamp: 5;
+  -webkit-line-clamp: 8;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
@@ -587,6 +588,7 @@ header {
   background-position: 100%;
   background-size: auto;
   background-repeat: no-repeat;
+  padding-top: 262px;
 }
 .hero__h {
   color: #fff;
@@ -618,9 +620,6 @@ header {
   font-weight: 400;
   line-height: 120%; /* 24px */
   margin-top: 8px;
-}
-.hero__title {
-  padding-top: 262px;
 }
 .hero__slider {
   margin-top: 192px;
@@ -672,11 +671,16 @@ header {
 }
 .service__cards {
   display: grid;
-  grid-template-columns: repeat(3, 3fr);
   max-width: 1320px;
-  min-height: 538px;
-  margin-top: 48px;
+  margin: 40px auto 0;
+  box-sizing: content-box;
+  grid-template-columns: repeat(3, 2fr);
   gap: 24px;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;
+}
+.service__cards::-webkit-scrollbar {
+  display: none;
 }
 .service__text {
   max-width: 920px;
@@ -782,7 +786,7 @@ header {
   .service__cards {
     max-width: 696px;
     display: grid;
-    grid-template-columns: repeat(2, 2fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 24px;
     margin: 48px auto 0;
   }
@@ -797,6 +801,7 @@ header {
   .service__subtitle {
     font-size: 14px;
     max-width: 342px;
+    margin-top: 16px;
   }
   .service__cards {
     min-width: 250px;
@@ -811,6 +816,21 @@ header {
     max-width: 250px;
     height: 215px;
     padding: 24px 16px;
+  }
+  .service__card > p {
+    margin-top: 10px;
+  }
+  .service__card:first-child {
+    margin-left: calc((100vw - 1320px) / 2);
+  }
+  .service__card:last-child {
+    margin-right: calc((100vw - 1320px) / 2);
+  }
+  .service__card:first-child {
+    margin-left: 24px;
+  }
+  .service__card:last-child {
+    margin-right: 24px;
   }
 }
 .about__container {
@@ -890,8 +910,16 @@ header {
 }
 .lawyers__cards {
   display: grid;
+  gap: 24px;
   grid-template-columns: repeat(auto-fill, minmax(312px, 1fr));
-  margin-top: 48px;
+  max-width: 1320px;
+  margin: 48px auto 0;
+  box-sizing: content-box;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;
+}
+.lawyers__cards__cards::-webkit-scrollbar {
+  display: none;
 }
 .lawyers__card {
   max-width: 312px;
@@ -923,17 +951,13 @@ header {
   cursor: url("../icons/cursorwhite.svg"), auto;
 }
 
-.cardop__span {
-  padding-top: 83px;
-}
-.cardop__subtitletop {
-  padding-top: 10px;
-}
-.cardop__subtitle {
-  padding-top: 40px;
-}
-.cardop__subtitlebottom {
-  padding: 40px 0 84px 0;
+.cardop__text {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  padding: 83px 20px 84px;
+  min-height: 414px;
 }
 .cardop__rt {
   position: absolute;
@@ -990,6 +1014,18 @@ header {
     max-width: 300px;
     height: 414px;
   }
+  .lawyers__card:first-child {
+    margin-left: calc((100vw - 1320px) / 2);
+  }
+  .lawyers__card:last-child {
+    margin-right: calc((100vw - 1320px) / 2);
+  }
+  .lawyers__card:first-child {
+    margin-left: 24px;
+  }
+  .lawyers__card:last-child {
+    margin-right: 24px;
+  }
   .lawyers__cardop {
     max-width: 300px;
     height: 414px;
@@ -1030,8 +1066,11 @@ header {
     max-width: 250px;
     height: 235px;
   }
+  .cardop__text {
+    padding: 63px 20px 64px;
+    min-height: 335px;
+  }
   .cardop__span {
-    padding-top: 45px;
     font-size: 12px;
   }
   .cardop__subtitletop {
@@ -1042,20 +1081,26 @@ header {
   }
   .cardop__subtitlebottom {
     font-size: 12px;
-    padding: 20px 0 40px;
   }
 }
 .review {
   padding: 80px 0;
   background-image: url("../image/bgtwo.webp");
-  background-position: 100%;
-  background-size: auto;
+  background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 .review__cards {
-  margin-top: 48px;
   display: flex;
   justify-content: space-between;
+  max-width: 1320px;
+  margin: 48px auto 0;
+  box-sizing: content-box;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;
+}
+.review__cards__cards::-webkit-scrollbar {
+  display: none;
 }
 .review__card {
   max-width: 648px;
@@ -1119,10 +1164,14 @@ header {
   background: lightgrey;
   display: block;
 }
+.review__hbtn {
+  display: inline;
+  margin-top: 32px;
+}
 
 @media (max-width: 1290px) {
   .review {
-    padding: 31px 0 40px;
+    padding: 40px 0;
   }
   .review__title {
     font-size: 24px;
@@ -1135,7 +1184,19 @@ header {
   .review__card {
     min-width: 576px;
   }
-  .about__btn {
+  .review__card:first-child {
+    margin-left: calc((100vw - 1320px) / 2);
+  }
+  .review__card:last-child {
+    margin-right: calc((100vw - 1320px) / 2);
+  }
+  .review__card:first-child {
+    margin-left: 24px;
+  }
+  .review__card:last-child {
+    margin-right: 24px;
+  }
+  .review__btn {
     max-width: unset;
   }
 }
@@ -1146,12 +1207,18 @@ header {
   .review__title {
     font-size: 20px;
   }
+  .review__subtitle {
+    display: -webkit-box;
+    -webkit-line-clamp: 9;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
   .review__icon {
     display: none;
   }
   .review__cards {
     gap: 24px;
-    padding-top: 24px;
+    margin-top: 24px;
     display: flex;
     overflow: scroll;
   }
@@ -1160,18 +1227,27 @@ header {
     min-height: 303px;
     padding: 24px;
   }
-  .review__img {
+  .review__img, .review__image {
     width: 50px;
     height: 50px;
+  }
+  .review__btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
   }
   .info__title {
     width: 182px;
     font-size: 18px;
   }
-  .about__hbtn,
-  .about__sertbtn {
+  .review__hbtn,
+  .review__sertbtn {
     display: unset;
     margin: 0 auto;
+  }
+  .review__sertbtn {
+    margin-top: -8px;
   }
 }
 .material {
@@ -1181,6 +1257,14 @@ header {
 .material__cards {
   display: flex;
   justify-content: space-between;
+  max-width: 1320px;
+  margin: 80px auto;
+  box-sizing: content-box;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;
+}
+.material__cards::-webkit-scrollbar {
+  display: none;
 }
 .material__white {
   border-color: #fff;
@@ -1301,6 +1385,18 @@ header {
   .material__card {
     min-width: 336px;
   }
+  .material__card:first-child {
+    margin-left: calc((100vw - 1320px) / 2);
+  }
+  .material__card:last-child {
+    margin-right: calc((100vw - 1320px) / 2);
+  }
+  .material__card:first-child {
+    margin-left: 24px;
+  }
+  .material__card:last-child {
+    margin-right: 24px;
+  }
   .material__cardopacity {
     min-width: 336px;
     height: 270px;
@@ -1393,7 +1489,7 @@ header {
   margin-top: 24px;
 }
 .contact__img {
-  max-width: 65px;
+  width: 65px;
   height: 65px;
   -o-object-fit: cover;
      object-fit: cover;

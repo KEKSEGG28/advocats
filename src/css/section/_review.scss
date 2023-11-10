@@ -3,14 +3,23 @@
   background-image: url("../image/bgtwo.webp");
   // border: 1px solid black;
   // width: 1920px;
-  background-position: 100%;
-  background-size: auto;
+  background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
 
   &__cards {
-    margin-top: 48px;
     display: flex;
     justify-content: space-between;
+    max-width: 1320px;
+    margin: 48px auto 0;
+    // padding: 0 15px;
+    box-sizing: content-box;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none;
+
+    &__cards::-webkit-scrollbar {
+      display: none;
+    }
   }
 
   &__card {
@@ -71,11 +80,15 @@
     background: lightgrey;
     display: block;
   }
+  &__hbtn {
+    display: inline;
+    margin-top: 32px;
+  }
 }
 
 @media (max-width: 1290px) {
   .review {
-    padding: 31px 0 40px;
+    padding: 40px 0;
     &__title {
       font-size: 24px;
     }
@@ -87,9 +100,21 @@
     }
     &__card {
       min-width: 576px;
+      &:first-child {
+        margin-left: calc((100vw - $container-width) / 2);
+      }
+      &:last-child {
+        margin-right: calc((100vw - $container-width) / 2);
+      }
+      &:first-child {
+        margin-left: $responsive-padding;
+      }
+      &:last-child {
+        margin-right: $responsive-padding;
+      }
     }
   }
-  .about__btn {
+  .review__btn {
     max-width: unset;
   }
 }
@@ -101,12 +126,18 @@
     &__title {
       font-size: 20px;
     }
+    &__subtitle {
+      display: -webkit-box;
+      -webkit-line-clamp: 9;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
     &__icon {
       display: none;
     }
     &__cards {
       gap: 24px;
-      padding-top: 24px;
+      margin-top: 24px;
       display: flex;
       overflow: scroll;
     }
@@ -115,9 +146,17 @@
       min-height: 303px;
       padding: 24px;
     }
-    &__img {
+    &__img,
+    &__image {
       width: 50px;
       height: 50px;
+    }
+    &__btn {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+      // margin-bottom: 40px;
     }
   }
   .info {
@@ -126,9 +165,12 @@
       font-size: 18px;
     }
   }
-  .about__hbtn,
-  .about__sertbtn {
+  .review__hbtn,
+  .review__sertbtn {
     display: unset;
     margin: 0 auto;
+  }
+  .review__sertbtn {
+    margin-top: -8px;
   }
 }

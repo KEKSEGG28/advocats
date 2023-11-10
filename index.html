@@ -9,6 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,600;6..12,700;6..12,800;6..12,900;6..12,1000&family=Rubik:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    
   </head>
   <body>
     <header>
@@ -83,7 +84,9 @@
                     />
                   </svg>
                   <li>
-                    <a href="#service" class="burger__link header__alink">Услуги</a>
+                    <a href="#service" class="burger__link header__alink"
+                      >Услуги</a
+                    >
                   </li>
                   <li>
                     <a href="#about" class="burger__link header__alink"
@@ -96,13 +99,19 @@
                     >
                   </li>
                   <li>
-                    <a href="#review" class="burger__link header__alink">Отзывы</a>
+                    <a href="#review" class="burger__link header__alink"
+                      >Отзывы</a
+                    >
                   </li>
                   <li>
-                    <a href="#material" class="burger__link header__alink">Новости</a>
+                    <a href="#material" class="burger__link header__alink"
+                      >Новости</a
+                    >
                   </li>
                   <li>
-                    <a href="#footer" class="burger__link header__alink">Контакты</a>
+                    <a href="#footer" class="burger__link header__alink"
+                      >Контакты</a
+                    >
                   </li>
                 </ul>
               </div>
@@ -179,6 +188,9 @@
               обеспечивает более или менее стандартное заполнение шаблона
             </p>
           </div>
+        </div>
+
+        <div class="container__serviceslider">
           <div class="service__cards">
             <div class="service__card">
               <svg
@@ -434,6 +446,8 @@
               </div>
             </div>
           </div>
+        </div>
+        <div class="container">
           <button class="service__button btn">Все услуги</button>
         </div>
       </section>
@@ -496,11 +510,15 @@
             мешает сосредоточиться. Lorem Ipsum используют потому, что тот
             обеспечивает более или менее стандартное заполнение шаблона
           </p>
-          <div class="lawyers__cards">
-            <div class="lawyers__card">
-              <div class="lawyers__cardop">
-                <span class="cardop__span">Горюнова Полина Алексеевна</span>
-                <p class="cardop__subtitletop">Юридический консультант</p>
+        </div>
+        <div class="lawyers__cards">
+          <div class="lawyers__card">
+            <div class="lawyers__cardop">
+              <div class="cardop__text">
+                <div>
+                  <span class="cardop__span">Горюнова Полина Алексеевна</span>
+                  <p class="cardop__subtitletop">Юридический консультант</p>
+                </div>
                 <p class="cardop__subtitle">
                   Есть много вариантов Lorem Ipsum, но большинство из них имеет
                   не всегда приемлемые модификации, например, юмористические
@@ -510,33 +528,34 @@
                 <p class="cardop__subtitlebottom">
                   12 лет юридической практики
                 </p>
-                <div class="cardop__rt"></div>
-                <div class="cardop__lt"></div>
-                <div class="cardop__rb"></div>
-                <div class="cardop__lb"></div>
               </div>
-              <div class="lawyers__img">
-                <img
-                  class="lawyers__img"
-                  src="./src/image/card1.webp"
-                  srcset="
-                    ./src/image/card1.webp   1x,
-                    ./src/image/card12x.webp 2x
-                  "
-                  alt="Горюнова Полина Алексеевна"
-                />
-              </div>
-              <div class="card__text">
-                <h2 class="card__name">Горюнова Полина Алексеевна</h2>
-                <p class="card__post">Юрист международного права</p>
-              </div>
+              <div class="cardop__rt"></div>
+              <div class="cardop__lt"></div>
+              <div class="cardop__rb"></div>
+              <div class="cardop__lb"></div>
             </div>
-            <div class="lawyers__card">
-              <div class="lawyers__cardop">
-                <span class="cardop__span">Миронов Александр Германович</span>
-                <p class="cardop__subtitletop">
-                  Кредитный адвокат, банковский юрист
-                </p>
+            <div class="lawyers__img">
+              <img
+                class="lawyers__img"
+                src="./src/image/card1.webp"
+                srcset="./src/image/card1.webp 1x, ./src/image/card12x.webp 2x"
+                alt="Горюнова Полина Алексеевна"
+              />
+            </div>
+            <div class="card__text">
+              <h2 class="card__name">Горюнова Полина Алексеевна</h2>
+              <p class="card__post">Юрист международного права</p>
+            </div>
+          </div>
+          <div class="lawyers__card">
+            <div class="lawyers__cardop">
+              <div class="cardop__text">
+                <div>
+                  <span class="cardop__span">Миронов Александр Германович</span>
+                  <p class="cardop__subtitletop">
+                    Кредитный адвокат, банковский юрист
+                  </p>
+                </div>
                 <p class="cardop__subtitle">
                   Есть много вариантов Lorem Ipsum, но большинство из них имеет
                   не всегда приемлемые модификации, например, юмористические
@@ -546,31 +565,32 @@
                 <p class="cardop__subtitlebottom">
                   12 лет юридической практики
                 </p>
-                <div class="cardop__rt"></div>
-                <div class="cardop__lt"></div>
-                <div class="cardop__rb"></div>
-                <div class="cardop__lb"></div>
               </div>
-              <div class="lawyers__img">
-                <img
-                  class="lawyers__img"
-                  src="./src/image/card2.webp"
-                  srcset="
-                    ./src/image/card2.webp   1x,
-                    ./src/image/card22x.webp 2x
-                  "
-                  alt="Миронов Александр Германович"
-                />
-              </div>
-              <div class="card__text">
-                <h2 class="card__name">Миронов Александр Германович</h2>
-                <p class="card__post">Кредитный адвокат, банковский юрист</p>
-              </div>
+              <div class="cardop__rt"></div>
+              <div class="cardop__lt"></div>
+              <div class="cardop__rb"></div>
+              <div class="cardop__lb"></div>
             </div>
-            <div class="lawyers__card">
-              <div class="lawyers__cardop">
-                <span class="cardop__span">Шестакова Елизавета Егоровна</span>
-                <p class="cardop__subtitletop">Юридический консультант</p>
+            <div class="lawyers__img">
+              <img
+                class="lawyers__img"
+                src="./src/image/card2.webp"
+                srcset="./src/image/card2.webp 1x, ./src/image/card22x.webp 2x"
+                alt="Миронов Александр Германович"
+              />
+            </div>
+            <div class="card__text">
+              <h2 class="card__name">Миронов Александр Германович</h2>
+              <p class="card__post">Кредитный адвокат, банковский юрист</p>
+            </div>
+          </div>
+          <div class="lawyers__card">
+            <div class="lawyers__cardop">
+              <div class="cardop__text">
+                <div>
+                  <span class="cardop__span">Шестакова Елизавета Егоровна</span>
+                  <p class="cardop__subtitletop">Юридический консультант</p>
+                </div>
                 <p class="cardop__subtitle">
                   Есть много вариантов Lorem Ipsum, но большинство из них имеет
                   не всегда приемлемые модификации, например, юмористические
@@ -580,32 +600,35 @@
                 <p class="cardop__subtitlebottom">
                   12 лет юридической практики
                 </p>
-                <div class="cardop__rt"></div>
-                <div class="cardop__lt"></div>
-                <div class="cardop__rb"></div>
-                <div class="cardop__lb"></div>
               </div>
-              <div class="lawyers__img">
-                <img
-                  class="lawyers__img"
-                  src="./src/image/card3.webp"
-                  srcset="
-                    ./src/image/card3.webp   1x,
-                    ./src/image/card32x.webp 2x
-                  "
-                  alt="Шестакова Елизавета Егоровна"
-                />
-              </div>
-              <div class="card__text">
-                <h2 class="card__name">Шестакова Елизавета Егоровна</h2>
-                <p class="card__post">Юридический консультант</p>
-              </div>
+              <div class="cardop__rt"></div>
+              <div class="cardop__lt"></div>
+              <div class="cardop__rb"></div>
+              <div class="cardop__lb"></div>
             </div>
+            <div class="lawyers__img">
+              <img
+                class="lawyers__img"
+                src="./src/image/card3.webp"
+                srcset="./src/image/card3.webp 1x, ./src/image/card32x.webp 2x"
+                alt="Шестакова Елизавета Егоровна"
+              />
+            </div>
+            <div class="card__text">
+              <h2 class="card__name">Шестакова Елизавета Егоровна</h2>
+              <p class="card__post">Юридический консультант</p>
+            </div>
+          </div>
 
-            <div class="lawyers__card">
-              <div class="lawyers__cardop">
-                <span class="cardop__span">Архипов Максим Константинович</span>
-                <p class="cardop__subtitletop">Юрист международного права</p>
+          <div class="lawyers__card">
+            <div class="lawyers__cardop">
+              <div class="cardop__text">
+                <div>
+                  <span class="cardop__span"
+                    >Архипов Максим Константинович</span
+                  >
+                  <p class="cardop__subtitletop">Юрист международного права</p>
+                </div>
                 <p class="cardop__subtitle">
                   Есть много вариантов Lorem Ipsum, но большинство из них имеет
                   не всегда приемлемые модификации, например, юмористические
@@ -615,26 +638,23 @@
                 <p class="cardop__subtitlebottom">
                   12 лет юридической практики
                 </p>
-                <div class="cardop__rt"></div>
-                <div class="cardop__lt"></div>
-                <div class="cardop__rb"></div>
-                <div class="cardop__lb"></div>
               </div>
-              <div class="lawyers__img">
-                <img
-                  class="lawyers__img"
-                  src="./src/image/card4.webp"
-                  srcset="
-                    ./src/image/card4.webp   1x,
-                    ./src/image/card42x.webp 2x
-                  "
-                  alt="Архипов Максим Константинович"
-                />
-              </div>
-              <div class="card__text">
-                <h2 class="card__name">Архипов Максим Константинович</h2>
-                <p class="card__post">Юрист международного права</p>
-              </div>
+              <div class="cardop__rt"></div>
+              <div class="cardop__lt"></div>
+              <div class="cardop__rb"></div>
+              <div class="cardop__lb"></div>
+            </div>
+            <div class="lawyers__img">
+              <img
+                class="lawyers__img"
+                src="./src/image/card4.webp"
+                srcset="./src/image/card4.webp 1x, ./src/image/card42x.webp 2x"
+                alt="Архипов Максим Константинович"
+              />
+            </div>
+            <div class="card__text">
+              <h2 class="card__name">Архипов Максим Константинович</h2>
+              <p class="card__post">Юрист международного права</p>
             </div>
           </div>
         </div>
@@ -673,77 +693,73 @@
             </div>
           </div>
           <div class="titlebtn"></div>
-          <div class="review__cards">
-            <div class="review__card">
-              <div class="review__content">
-                <div class="review__img">
-                  <img
-                    class="review__image"
-                    src="./src/image/reviewone.webp"
-                    srcset="
-                      ./src/image/reviewone.webp   1x,
-                      ./src/image/reviewone2x.webp 2x
-                    "
-                    alt="Логинова Анастасия"
-                  />
-                </div>
-                <div class="review__info">
-                  <p class="info__subtitle">ООО “ИТ Консалтинг”</p>
-                  <p class="info__title">Логинова Анастасия</p>
-                </div>
-
+        </div>
+        <div class="review__cards">
+          <div class="review__card">
+            <div class="review__content">
+              <div class="review__img">
                 <img
-                  class="review__icon"
-                  src="./src/icons/pero.svg"
-                  alt="pero"
+                  class="review__image"
+                  src="./src/image/reviewone.webp"
+                  srcset="
+                    ./src/image/reviewone.webp   1x,
+                    ./src/image/reviewone2x.webp 2x
+                  "
+                  alt="Логинова Анастасия"
                 />
               </div>
-              <p class="review__subtitle">
-                Многие думают, что Lorem Ipsum - взятый с потолка
-                псевдо-латинский набор слов, но это не совсем так. Его корни
-                уходят в один фрагмент классической латыни 45 года н.э., то есть
-                более двух тысячелетий назад. Ричард МакКлинток, профессор
-                латыни из колледжа Hampden-Sydney, штат Вирджиния, взял одно из
-                самых странных слов ...
-              </p>
-            </div>
-            <div class="review__card">
-              <div class="review__content">
-                <div class="review__img">
-                  <img
-                    class="review__image"
-                    src="./src/image/reviewtwo.webp"
-                    srcset="
-                      ./src/image/reviewtwo.webp   1x,
-                      ./src/image/reviewtwo2x.webp 2x
-                    "
-                    alt="Макаров Сергей"
-                  />
-                </div>
-                <div class="review__info">
-                  <p class="info__subtitle">АО “ПРОМАРШ”</p>
-                  <p class="info__title">Макаров Сергей</p>
-                </div>
-
-                <img
-                  class="review__icon"
-                  src="./src/icons/pero.svg"
-                  alt="pero"
-                />
+              <div class="review__info">
+                <p class="info__subtitle">ООО “ИТ Консалтинг”</p>
+                <p class="info__title">Логинова Анастасия</p>
               </div>
-              <p class="review__subtitle">
-                Многие думают, что Lorem Ipsum - взятый с потолка
-                псевдо-латинский набор слов, но это не совсем так. Его корни
-                уходят в один фрагмент классической латыни 45 года н.э., то есть
-                более двух тысячелетий назад. Ричард МакКлинток, профессор
-                латыни из колледжа Hampden-Sydney, штат Вирджиния, взял одно из
-                самых странных слов ...
-              </p>
+
+              <img class="review__icon" src="./src/icons/pero.svg" alt="pero" />
             </div>
+            <p class="review__subtitle">
+              Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский
+              набор слов, но это не совсем так. Его корни уходят в один фрагмент
+              классической латыни 45 года н.э., то есть более двух тысячелетий
+              назад. Ричард МакКлинток, профессор латыни из колледжа
+              Hampden-Sydney, штат Вирджиния, взял одно из самых странных слов
+              ...
+            </p>
           </div>
-          <div class="about__btn">
-            <button class="about__hbtn btn">Все отзывы</button>
-            <button class="about__sertbtn btn">написать отзыв</button>
+          <div class="review__card">
+            <div class="review__content">
+              <div class="review__img">
+                <img
+                  class="review__image"
+                  src="./src/image/reviewtwo.webp"
+                  srcset="
+                    ./src/image/reviewtwo.webp   1x,
+                    ./src/image/reviewtwo2x.webp 2x
+                  "
+                  alt="Макаров Сергей"
+                />
+              </div>
+              <div class="review__info">
+                <p class="info__subtitle">АО “ПРОМАРШ”</p>
+                <p class="info__title">Макаров Сергей</p>
+              </div>
+
+              <img class="review__icon" src="./src/icons/pero.svg" alt="pero" />
+            </div>
+            <p class="review__subtitle">
+              Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский
+              набор слов, но это не совсем так. Его корни уходят в один фрагмент
+              классической латыни 45 года н.э., то есть более двух тысячелетий
+              назад. Ричард МакКлинток, профессор латыни из колледжа
+              Hampden-Sydney, штат Вирджиния, взял одно из самых странных слов
+              ...
+            </p>
+          </div>
+        </div>
+        <div class="container">
+          <div class="review__btn">
+            <button class="review__hbtn btn">Все отзывы</button>
+            <button class="review__sertbtn about__sertbtn btn">
+              написать отзыв
+            </button>
           </div>
         </div>
       </section>
@@ -757,175 +773,175 @@
             мешает сосредоточиться. Lorem Ipsum используют потому, что тот
             обеспечивает более или менее стандартное заполнение шаблона
           </p>
-          <div class="material__cards">
-            <div class="material__card">
-              <div class="material__img">
-                <div class="material__cardopacity">
-                  <div class="cardop__rt material__white"></div>
-                  <div class="cardop__lt material__white"></div>
-                  <div class="cardop__rb material__white"></div>
-                  <div class="cardop__lb material__white"></div>
-                  <div class="material__svg">
-                    <svg
-                      width="22"
-                      height="20"
-                      viewBox="0 0 22 20"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M20.6098 9.7875C19.8533 7.88603 18.5399 6.24164 16.8321 5.05755C15.1243 3.87347 13.0968 3.20161 11.0003 3.125C8.90381 3.20161 6.87635 3.87347 5.16852 5.05755C3.4607 6.24164 2.14737 7.88603 1.39086 9.7875C1.33977 9.92482 1.33977 10.0752 1.39086 10.2125C2.14737 12.114 3.4607 13.7584 5.16852 14.9424C6.87635 16.1265 8.90381 16.7984 11.0003 16.875C13.0968 16.7984 15.1243 16.1265 16.8321 14.9424C18.5399 13.7584 19.8533 12.114 20.6098 10.2125C20.6609 10.0752 20.6609 9.92482 20.6098 9.7875ZM11.0003 15.625C7.59134 15.625 3.9894 13.1687 2.6837 10C3.9894 6.83125 7.59134 4.375 11.0003 4.375C14.4093 4.375 18.0112 6.83125 19.3169 10C18.0112 13.1687 14.4093 15.625 11.0003 15.625Z"
-                        fill="#4F8FF0"
-                      />
-                      <path
-                        d="M11.0003 6.25C10.2371 6.25 9.49091 6.46993 8.85627 6.88199C8.22162 7.29404 7.72698 7.87971 7.43488 8.56494C7.14279 9.25016 7.06636 10.0042 7.21527 10.7316C7.36418 11.459 7.73173 12.1272 8.27146 12.6517C8.81118 13.1761 9.49883 13.5333 10.2474 13.6779C10.9961 13.8226 11.772 13.7484 12.4772 13.4645C13.1824 13.1807 13.7851 12.7001 14.2092 12.0834C14.6332 11.4667 14.8596 10.7417 14.8596 10C14.8596 9.00544 14.453 8.05161 13.7292 7.34835C13.0055 6.64509 12.0239 6.25 11.0003 6.25ZM11.0003 12.5C10.4915 12.5 9.99406 12.3534 9.57096 12.0787C9.14786 11.804 8.8181 11.4135 8.62337 10.9567C8.42864 10.4999 8.37769 9.99723 8.47696 9.51227C8.57623 9.02732 8.82127 8.58186 9.18108 8.23223C9.5409 7.8826 9.99933 7.6445 10.4984 7.54804C10.9975 7.45157 11.5148 7.50108 11.9849 7.6903C12.455 7.87952 12.8569 8.19995 13.1396 8.61107C13.4223 9.0222 13.5732 9.50555 13.5732 10C13.5732 10.663 13.3021 11.2989 12.8196 11.7678C12.3371 12.2366 11.6827 12.5 11.0003 12.5Z"
-                        fill="#4F8FF0"
-                      />
-                    </svg>
-                  </div>
-                  <!-- <h3 class="cardopacity__title">Воистину радостный звук: шёпот бессменных лидеров</h3> -->
+        </div>
+        <div class="material__cards">
+          <div class="material__card">
+            <div class="material__img">
+              <div class="material__cardopacity">
+                <div class="cardop__rt material__white"></div>
+                <div class="cardop__lt material__white"></div>
+                <div class="cardop__rb material__white"></div>
+                <div class="cardop__lb material__white"></div>
+                <div class="material__svg">
+                  <svg
+                    width="22"
+                    height="20"
+                    viewBox="0 0 22 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M20.6098 9.7875C19.8533 7.88603 18.5399 6.24164 16.8321 5.05755C15.1243 3.87347 13.0968 3.20161 11.0003 3.125C8.90381 3.20161 6.87635 3.87347 5.16852 5.05755C3.4607 6.24164 2.14737 7.88603 1.39086 9.7875C1.33977 9.92482 1.33977 10.0752 1.39086 10.2125C2.14737 12.114 3.4607 13.7584 5.16852 14.9424C6.87635 16.1265 8.90381 16.7984 11.0003 16.875C13.0968 16.7984 15.1243 16.1265 16.8321 14.9424C18.5399 13.7584 19.8533 12.114 20.6098 10.2125C20.6609 10.0752 20.6609 9.92482 20.6098 9.7875ZM11.0003 15.625C7.59134 15.625 3.9894 13.1687 2.6837 10C3.9894 6.83125 7.59134 4.375 11.0003 4.375C14.4093 4.375 18.0112 6.83125 19.3169 10C18.0112 13.1687 14.4093 15.625 11.0003 15.625Z"
+                      fill="#4F8FF0"
+                    />
+                    <path
+                      d="M11.0003 6.25C10.2371 6.25 9.49091 6.46993 8.85627 6.88199C8.22162 7.29404 7.72698 7.87971 7.43488 8.56494C7.14279 9.25016 7.06636 10.0042 7.21527 10.7316C7.36418 11.459 7.73173 12.1272 8.27146 12.6517C8.81118 13.1761 9.49883 13.5333 10.2474 13.6779C10.9961 13.8226 11.772 13.7484 12.4772 13.4645C13.1824 13.1807 13.7851 12.7001 14.2092 12.0834C14.6332 11.4667 14.8596 10.7417 14.8596 10C14.8596 9.00544 14.453 8.05161 13.7292 7.34835C13.0055 6.64509 12.0239 6.25 11.0003 6.25ZM11.0003 12.5C10.4915 12.5 9.99406 12.3534 9.57096 12.0787C9.14786 11.804 8.8181 11.4135 8.62337 10.9567C8.42864 10.4999 8.37769 9.99723 8.47696 9.51227C8.57623 9.02732 8.82127 8.58186 9.18108 8.23223C9.5409 7.8826 9.99933 7.6445 10.4984 7.54804C10.9975 7.45157 11.5148 7.50108 11.9849 7.6903C12.455 7.87952 12.8569 8.19995 13.1396 8.61107C13.4223 9.0222 13.5732 9.50555 13.5732 10C13.5732 10.663 13.3021 11.2989 12.8196 11.7678C12.3371 12.2366 11.6827 12.5 11.0003 12.5Z"
+                      fill="#4F8FF0"
+                    />
+                  </svg>
                 </div>
-                <div class="material__image">
-                  <img
-                    class="material__image"
-                    src="./src/image/material1.webp"
-                    srcset="
-                      ./src/image/material1.webp   1x,
-                      ./src/image/material12x.webp 2x
-                    "
-                    alt="zdanie"
-                  />
-                </div>
+                <!-- <h3 class="cardopacity__title">Воистину радостный звук: шёпот бессменных лидеров</h3> -->
               </div>
-
-              <div class="material__text">
-                <h3 class="material__cardtitle">
-                  Воистину радостный звук: шёпот бессменных лидеров
-                </h3>
-                <div class="material__line">
-                  <p class="material__time">24 апр. 2023 г.</p>
-                  <div class="material__lineline"></div>
-                </div>
-                <p class="material__cardsubtitle">
-                  Предварительные выводы неутешительны: синтетическое
-                  тестирование, а также свежий взгляд на привычные вещи —
-                  безусловно открывает новые горизонты для экономической
-                  целесообразности принимаемых решений.
-                </p>
+              <div class="material__image">
+                <img
+                  class="material__image"
+                  src="./src/image/material1.webp"
+                  srcset="
+                    ./src/image/material1.webp   1x,
+                    ./src/image/material12x.webp 2x
+                  "
+                  alt="zdanie"
+                />
               </div>
             </div>
-            <div class="material__card">
-              <div class="material__img">
-                <div class="material__cardopacity">
-                  <div class="cardop__rt material__white"></div>
-                  <div class="cardop__lt material__white"></div>
-                  <div class="cardop__rb material__white"></div>
-                  <div class="cardop__lb material__white"></div>
-                  <div class="material__svg">
-                    <svg
-                      width="22"
-                      height="20"
-                      viewBox="0 0 22 20"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M20.6098 9.7875C19.8533 7.88603 18.5399 6.24164 16.8321 5.05755C15.1243 3.87347 13.0968 3.20161 11.0003 3.125C8.90381 3.20161 6.87635 3.87347 5.16852 5.05755C3.4607 6.24164 2.14737 7.88603 1.39086 9.7875C1.33977 9.92482 1.33977 10.0752 1.39086 10.2125C2.14737 12.114 3.4607 13.7584 5.16852 14.9424C6.87635 16.1265 8.90381 16.7984 11.0003 16.875C13.0968 16.7984 15.1243 16.1265 16.8321 14.9424C18.5399 13.7584 19.8533 12.114 20.6098 10.2125C20.6609 10.0752 20.6609 9.92482 20.6098 9.7875ZM11.0003 15.625C7.59134 15.625 3.9894 13.1687 2.6837 10C3.9894 6.83125 7.59134 4.375 11.0003 4.375C14.4093 4.375 18.0112 6.83125 19.3169 10C18.0112 13.1687 14.4093 15.625 11.0003 15.625Z"
-                        fill="#4F8FF0"
-                      />
-                      <path
-                        d="M11.0003 6.25C10.2371 6.25 9.49091 6.46993 8.85627 6.88199C8.22162 7.29404 7.72698 7.87971 7.43488 8.56494C7.14279 9.25016 7.06636 10.0042 7.21527 10.7316C7.36418 11.459 7.73173 12.1272 8.27146 12.6517C8.81118 13.1761 9.49883 13.5333 10.2474 13.6779C10.9961 13.8226 11.772 13.7484 12.4772 13.4645C13.1824 13.1807 13.7851 12.7001 14.2092 12.0834C14.6332 11.4667 14.8596 10.7417 14.8596 10C14.8596 9.00544 14.453 8.05161 13.7292 7.34835C13.0055 6.64509 12.0239 6.25 11.0003 6.25ZM11.0003 12.5C10.4915 12.5 9.99406 12.3534 9.57096 12.0787C9.14786 11.804 8.8181 11.4135 8.62337 10.9567C8.42864 10.4999 8.37769 9.99723 8.47696 9.51227C8.57623 9.02732 8.82127 8.58186 9.18108 8.23223C9.5409 7.8826 9.99933 7.6445 10.4984 7.54804C10.9975 7.45157 11.5148 7.50108 11.9849 7.6903C12.455 7.87952 12.8569 8.19995 13.1396 8.61107C13.4223 9.0222 13.5732 9.50555 13.5732 10C13.5732 10.663 13.3021 11.2989 12.8196 11.7678C12.3371 12.2366 11.6827 12.5 11.0003 12.5Z"
-                        fill="#4F8FF0"
-                      />
-                    </svg>
-                  </div>
-                </div>
-                <div class="material__image">
-                  <img
-                    class="material__image"
-                    src="./src/image/material2.webp"
-                    srcset="
-                      ./src/image/material2.webp   1x,
-                      ./src/image/material22x.webp 2x
-                    "
-                    alt="zdanie"
-                  />
-                </div>
-              </div>
 
-              <div class="material__text">
-                <h3 class="material__cardtitle">
-                  Франция намерена исследовать, почему объемы выросли
-                </h3>
-                <div class="material__line">
-                  <p class="material__time">24 апр. 2023 г.</p>
-                  <div class="material__lineline"></div>
-                </div>
-                <p class="material__cardsubtitle">
-                  Для современного мира новая модель организационной
-                  деятельности влечет за собой процесс внедрения и модернизации
-                  вывода текущих активов. Являясь всего лишь частью общей
-                  картины, базовые сценарии поведения...
-                </p>
+            <div class="material__text">
+              <h3 class="material__cardtitle">
+                Воистину радостный звук: шёпот бессменных лидеров
+              </h3>
+              <div class="material__line">
+                <p class="material__time">24 апр. 2023 г.</p>
+                <div class="material__lineline"></div>
               </div>
-            </div>
-            <div class="material__card">
-              <div class="material__img">
-                <div class="material__cardopacity">
-                  <div class="cardop__rt material__white"></div>
-                  <div class="cardop__lt material__white"></div>
-                  <div class="cardop__rb material__white"></div>
-                  <div class="cardop__lb material__white"></div>
-                  <div class="material__svg">
-                    <svg
-                      width="22"
-                      height="20"
-                      viewBox="0 0 22 20"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M20.6098 9.7875C19.8533 7.88603 18.5399 6.24164 16.8321 5.05755C15.1243 3.87347 13.0968 3.20161 11.0003 3.125C8.90381 3.20161 6.87635 3.87347 5.16852 5.05755C3.4607 6.24164 2.14737 7.88603 1.39086 9.7875C1.33977 9.92482 1.33977 10.0752 1.39086 10.2125C2.14737 12.114 3.4607 13.7584 5.16852 14.9424C6.87635 16.1265 8.90381 16.7984 11.0003 16.875C13.0968 16.7984 15.1243 16.1265 16.8321 14.9424C18.5399 13.7584 19.8533 12.114 20.6098 10.2125C20.6609 10.0752 20.6609 9.92482 20.6098 9.7875ZM11.0003 15.625C7.59134 15.625 3.9894 13.1687 2.6837 10C3.9894 6.83125 7.59134 4.375 11.0003 4.375C14.4093 4.375 18.0112 6.83125 19.3169 10C18.0112 13.1687 14.4093 15.625 11.0003 15.625Z"
-                        fill="#4F8FF0"
-                      />
-                      <path
-                        d="M11.0003 6.25C10.2371 6.25 9.49091 6.46993 8.85627 6.88199C8.22162 7.29404 7.72698 7.87971 7.43488 8.56494C7.14279 9.25016 7.06636 10.0042 7.21527 10.7316C7.36418 11.459 7.73173 12.1272 8.27146 12.6517C8.81118 13.1761 9.49883 13.5333 10.2474 13.6779C10.9961 13.8226 11.772 13.7484 12.4772 13.4645C13.1824 13.1807 13.7851 12.7001 14.2092 12.0834C14.6332 11.4667 14.8596 10.7417 14.8596 10C14.8596 9.00544 14.453 8.05161 13.7292 7.34835C13.0055 6.64509 12.0239 6.25 11.0003 6.25ZM11.0003 12.5C10.4915 12.5 9.99406 12.3534 9.57096 12.0787C9.14786 11.804 8.8181 11.4135 8.62337 10.9567C8.42864 10.4999 8.37769 9.99723 8.47696 9.51227C8.57623 9.02732 8.82127 8.58186 9.18108 8.23223C9.5409 7.8826 9.99933 7.6445 10.4984 7.54804C10.9975 7.45157 11.5148 7.50108 11.9849 7.6903C12.455 7.87952 12.8569 8.19995 13.1396 8.61107C13.4223 9.0222 13.5732 9.50555 13.5732 10C13.5732 10.663 13.3021 11.2989 12.8196 11.7678C12.3371 12.2366 11.6827 12.5 11.0003 12.5Z"
-                        fill="#4F8FF0"
-                      />
-                    </svg>
-                  </div>
-                </div>
-                <div class="material__img">
-                  <img
-                    class="material__image"
-                    src="./src/image/material3.webp"
-                    srcset="
-                      ./src/image/material3.webp   1x,
-                      ./src/image/material32x.webp 2x
-                    "
-                    alt="zdanie"
-                  />
-                </div>
-              </div>
-
-              <div class="material__text">
-                <h3 class="material__cardtitle">
-                  Сплочённость команды профессионалов продолжает удивлять
-                </h3>
-                <div class="material__line">
-                  <p class="material__time">02 фев. 2023 г.</p>
-                  <div class="material__lineline"></div>
-                </div>
-                <p class="material__cardsubtitle">
-                  Современные технологии достигли такого уровня, что курс на
-                  социально-ориентированный национальный проект способствует
-                  повышению качества соответствующих условий активизации.
-                </p>
-              </div>
+              <p class="material__cardsubtitle">
+                Предварительные выводы неутешительны: синтетическое
+                тестирование, а также свежий взгляд на привычные вещи —
+                безусловно открывает новые горизонты для экономической
+                целесообразности принимаемых решений.
+              </p>
             </div>
           </div>
-          <button class="btn">Все новости</button>
+          <div class="material__card">
+            <div class="material__img">
+              <div class="material__cardopacity">
+                <div class="cardop__rt material__white"></div>
+                <div class="cardop__lt material__white"></div>
+                <div class="cardop__rb material__white"></div>
+                <div class="cardop__lb material__white"></div>
+                <div class="material__svg">
+                  <svg
+                    width="22"
+                    height="20"
+                    viewBox="0 0 22 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M20.6098 9.7875C19.8533 7.88603 18.5399 6.24164 16.8321 5.05755C15.1243 3.87347 13.0968 3.20161 11.0003 3.125C8.90381 3.20161 6.87635 3.87347 5.16852 5.05755C3.4607 6.24164 2.14737 7.88603 1.39086 9.7875C1.33977 9.92482 1.33977 10.0752 1.39086 10.2125C2.14737 12.114 3.4607 13.7584 5.16852 14.9424C6.87635 16.1265 8.90381 16.7984 11.0003 16.875C13.0968 16.7984 15.1243 16.1265 16.8321 14.9424C18.5399 13.7584 19.8533 12.114 20.6098 10.2125C20.6609 10.0752 20.6609 9.92482 20.6098 9.7875ZM11.0003 15.625C7.59134 15.625 3.9894 13.1687 2.6837 10C3.9894 6.83125 7.59134 4.375 11.0003 4.375C14.4093 4.375 18.0112 6.83125 19.3169 10C18.0112 13.1687 14.4093 15.625 11.0003 15.625Z"
+                      fill="#4F8FF0"
+                    />
+                    <path
+                      d="M11.0003 6.25C10.2371 6.25 9.49091 6.46993 8.85627 6.88199C8.22162 7.29404 7.72698 7.87971 7.43488 8.56494C7.14279 9.25016 7.06636 10.0042 7.21527 10.7316C7.36418 11.459 7.73173 12.1272 8.27146 12.6517C8.81118 13.1761 9.49883 13.5333 10.2474 13.6779C10.9961 13.8226 11.772 13.7484 12.4772 13.4645C13.1824 13.1807 13.7851 12.7001 14.2092 12.0834C14.6332 11.4667 14.8596 10.7417 14.8596 10C14.8596 9.00544 14.453 8.05161 13.7292 7.34835C13.0055 6.64509 12.0239 6.25 11.0003 6.25ZM11.0003 12.5C10.4915 12.5 9.99406 12.3534 9.57096 12.0787C9.14786 11.804 8.8181 11.4135 8.62337 10.9567C8.42864 10.4999 8.37769 9.99723 8.47696 9.51227C8.57623 9.02732 8.82127 8.58186 9.18108 8.23223C9.5409 7.8826 9.99933 7.6445 10.4984 7.54804C10.9975 7.45157 11.5148 7.50108 11.9849 7.6903C12.455 7.87952 12.8569 8.19995 13.1396 8.61107C13.4223 9.0222 13.5732 9.50555 13.5732 10C13.5732 10.663 13.3021 11.2989 12.8196 11.7678C12.3371 12.2366 11.6827 12.5 11.0003 12.5Z"
+                      fill="#4F8FF0"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div class="material__image">
+                <img
+                  class="material__image"
+                  src="./src/image/material2.webp"
+                  srcset="
+                    ./src/image/material2.webp   1x,
+                    ./src/image/material22x.webp 2x
+                  "
+                  alt="zdanie"
+                />
+              </div>
+            </div>
+
+            <div class="material__text">
+              <h3 class="material__cardtitle">
+                Франция намерена исследовать, почему объемы выросли
+              </h3>
+              <div class="material__line">
+                <p class="material__time">24 апр. 2023 г.</p>
+                <div class="material__lineline"></div>
+              </div>
+              <p class="material__cardsubtitle">
+                Для современного мира новая модель организационной деятельности
+                влечет за собой процесс внедрения и модернизации вывода текущих
+                активов. Являясь всего лишь частью общей картины, базовые
+                сценарии поведения...
+              </p>
+            </div>
+          </div>
+          <div class="material__card">
+            <div class="material__img">
+              <div class="material__cardopacity">
+                <div class="cardop__rt material__white"></div>
+                <div class="cardop__lt material__white"></div>
+                <div class="cardop__rb material__white"></div>
+                <div class="cardop__lb material__white"></div>
+                <div class="material__svg">
+                  <svg
+                    width="22"
+                    height="20"
+                    viewBox="0 0 22 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M20.6098 9.7875C19.8533 7.88603 18.5399 6.24164 16.8321 5.05755C15.1243 3.87347 13.0968 3.20161 11.0003 3.125C8.90381 3.20161 6.87635 3.87347 5.16852 5.05755C3.4607 6.24164 2.14737 7.88603 1.39086 9.7875C1.33977 9.92482 1.33977 10.0752 1.39086 10.2125C2.14737 12.114 3.4607 13.7584 5.16852 14.9424C6.87635 16.1265 8.90381 16.7984 11.0003 16.875C13.0968 16.7984 15.1243 16.1265 16.8321 14.9424C18.5399 13.7584 19.8533 12.114 20.6098 10.2125C20.6609 10.0752 20.6609 9.92482 20.6098 9.7875ZM11.0003 15.625C7.59134 15.625 3.9894 13.1687 2.6837 10C3.9894 6.83125 7.59134 4.375 11.0003 4.375C14.4093 4.375 18.0112 6.83125 19.3169 10C18.0112 13.1687 14.4093 15.625 11.0003 15.625Z"
+                      fill="#4F8FF0"
+                    />
+                    <path
+                      d="M11.0003 6.25C10.2371 6.25 9.49091 6.46993 8.85627 6.88199C8.22162 7.29404 7.72698 7.87971 7.43488 8.56494C7.14279 9.25016 7.06636 10.0042 7.21527 10.7316C7.36418 11.459 7.73173 12.1272 8.27146 12.6517C8.81118 13.1761 9.49883 13.5333 10.2474 13.6779C10.9961 13.8226 11.772 13.7484 12.4772 13.4645C13.1824 13.1807 13.7851 12.7001 14.2092 12.0834C14.6332 11.4667 14.8596 10.7417 14.8596 10C14.8596 9.00544 14.453 8.05161 13.7292 7.34835C13.0055 6.64509 12.0239 6.25 11.0003 6.25ZM11.0003 12.5C10.4915 12.5 9.99406 12.3534 9.57096 12.0787C9.14786 11.804 8.8181 11.4135 8.62337 10.9567C8.42864 10.4999 8.37769 9.99723 8.47696 9.51227C8.57623 9.02732 8.82127 8.58186 9.18108 8.23223C9.5409 7.8826 9.99933 7.6445 10.4984 7.54804C10.9975 7.45157 11.5148 7.50108 11.9849 7.6903C12.455 7.87952 12.8569 8.19995 13.1396 8.61107C13.4223 9.0222 13.5732 9.50555 13.5732 10C13.5732 10.663 13.3021 11.2989 12.8196 11.7678C12.3371 12.2366 11.6827 12.5 11.0003 12.5Z"
+                      fill="#4F8FF0"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div class="material__img">
+                <img
+                  class="material__image"
+                  src="./src/image/material3.webp"
+                  srcset="
+                    ./src/image/material3.webp   1x,
+                    ./src/image/material32x.webp 2x
+                  "
+                  alt="zdanie"
+                />
+              </div>
+            </div>
+
+            <div class="material__text">
+              <h3 class="material__cardtitle">
+                Сплочённость команды профессионалов продолжает удивлять
+              </h3>
+              <div class="material__line">
+                <p class="material__time">02 фев. 2023 г.</p>
+                <div class="material__lineline"></div>
+              </div>
+              <p class="material__cardsubtitle">
+                Современные технологии достигли такого уровня, что курс на
+                социально-ориентированный национальный проект способствует
+                повышению качества соответствующих условий активизации.
+              </p>
+            </div>
+          </div>
         </div>
+        <div class="container"><button class="btn">Все новости</button></div>
       </section>
       <!-- футер -->
       <footer class="footer" id="footer">
@@ -1035,5 +1051,6 @@
         </div>
       </footer>
     </main>
+    <script src="./src/app/script.js"></script>
   </body>
 </html>

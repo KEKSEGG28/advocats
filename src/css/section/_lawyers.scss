@@ -11,9 +11,19 @@
   }
   &__cards {
     display: grid;
+    gap: 24px;
     // justify-content: space-between;
     grid-template-columns: repeat(auto-fill, minmax(312px, 1fr));
-    margin-top: 48px;
+    max-width: 1320px;
+    margin: 48px auto 0;
+    // padding: 0 15px;
+    box-sizing: content-box;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none;
+
+    &__cards::-webkit-scrollbar {
+      display: none;
+    }
   }
   &__card {
     max-width: 312px;
@@ -47,18 +57,26 @@
   }
 }
 .cardop {
-  &__span {
-    padding-top: 83px;
+  &__text {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    padding: 83px 20px 84px;
+    min-height: 414px;
   }
-  &__subtitletop {
-    padding-top: 10px;
-  }
-  &__subtitle {
-    padding-top: 40px;
-  }
-  &__subtitlebottom {
-    padding: 40px 0 84px 0;
-  }
+  // &__span {
+  //   padding-top: 83px;
+  // }
+  // &__subtitletop {
+  //   padding-top: 10px;
+  // }
+  // &__subtitle {
+  //   padding-top: 40px;
+  // }
+  // &__subtitlebottom {
+  //   padding: 40px 0 84px 0;
+
   &__rt {
     position: absolute;
     width: 25px;
@@ -115,6 +133,18 @@
     &__card {
       max-width: 300px;
       height: 414px;
+      &:first-child {
+        margin-left: calc((100vw - $container-width) / 2);
+      }
+      &:last-child {
+        margin-right: calc((100vw - $container-width) / 2);
+      }
+      &:first-child {
+        margin-left: $responsive-padding;
+      }
+      &:last-child {
+        margin-right: $responsive-padding;
+      }
     }
     &__cardop {
       max-width: 300px;
@@ -159,8 +189,11 @@
     }
   }
   .cardop {
+    &__text {
+      padding: 63px 20px 64px;
+      min-height: 335px;
+    }
     &__span {
-      padding-top: 45px;
       font-size: 12px;
     }
     &__subtitletop {
@@ -171,7 +204,6 @@
     }
     &__subtitlebottom {
       font-size: 12px;
-      padding: 20px 0 40px;
     }
   }
 }
