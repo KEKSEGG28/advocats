@@ -188,6 +188,11 @@
     }
     &__card {
       min-width: 250px;
+      margin-top: unset;
+    }
+    &__cards {
+      margin: unset;
+      margin-top: 28px;
     }
   }
   .material__img:hover + .material__text h3 {

@@ -58,6 +58,7 @@
 }
 @media (max-width: 1024px) {
   .hero {
+    padding-top: 148px;
     &__h {
       font-size: 24px;
     }
@@ -71,12 +72,11 @@
 }
 @media (max-width: 540px) {
   .hero {
+    padding-top: 142px;
     &__h {
       font-size: 18px;
     }
-    &__title {
-      padding-top: 142px;
-    }
+
     &__span {
       font-size: 30px;
     }
