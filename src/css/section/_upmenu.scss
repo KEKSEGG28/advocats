@@ -2,8 +2,8 @@
   background-image: url("../image/bg.webp");
   // border: 1px solid black;
   // width: 1920px;
-  background-position: 100%;
-  background-size: auto;
+  background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
   padding-top: 262px;
 
@@ -58,15 +58,19 @@
 }
 @media (max-width: 1024px) {
   .hero {
-    padding-top: 148px;
+    padding-top: 200px;
     &__h {
       font-size: 24px;
     }
     &__span {
       font-size: 56px;
+      text-align: center;
     }
     &__subtitle {
       font-size: 18px;
+    }
+    &__slider {
+      margin-top: 36px;
     }
   }
 }
